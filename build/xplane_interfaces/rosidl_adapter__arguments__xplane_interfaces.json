@@ -1,0 +1,7 @@
+{
+  "package_name": "xplane_interfaces",
+  "non_idl_tuples": [
+    "/home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces:msg/UAVState.msg",
+    "/home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces:msg/UAVControl.msg"
+  ]
+}

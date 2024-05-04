@@ -1,0 +1,2 @@
+Invoking command in '/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces -- -j24 -l24
+Invoked command in '/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces -- -j24 -l24

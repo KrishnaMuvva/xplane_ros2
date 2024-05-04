@@ -1,0 +1,3 @@
+[console_scripts]
+uav_state_node = xplaneros2_main.uav_state_node:main
+

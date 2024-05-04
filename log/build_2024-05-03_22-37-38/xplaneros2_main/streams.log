@@ -1,0 +1,30 @@
+[0.431s] Invoking command in '/home/uas/Documents/blue/git_repos/xplane_ros2/src/xplaneros2_main': PYTHONPATH=/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/prefix_override:/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/xplaneros2_main build --build-base /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/build install --record /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/install.log --single-version-externally-managed install_data
+[0.595s] running egg_info
+[0.596s] writing ../../build/xplaneros2_main/xplaneros2_main.egg-info/PKG-INFO
+[0.596s] writing dependency_links to ../../build/xplaneros2_main/xplaneros2_main.egg-info/dependency_links.txt
+[0.596s] writing entry points to ../../build/xplaneros2_main/xplaneros2_main.egg-info/entry_points.txt
+[0.596s] writing requirements to ../../build/xplaneros2_main/xplaneros2_main.egg-info/requires.txt
+[0.596s] writing top-level names to ../../build/xplaneros2_main/xplaneros2_main.egg-info/top_level.txt
+[0.598s] reading manifest file '../../build/xplaneros2_main/xplaneros2_main.egg-info/SOURCES.txt'
+[0.598s] writing manifest file '../../build/xplaneros2_main/xplaneros2_main.egg-info/SOURCES.txt'
+[0.598s] running build
+[0.598s] running build_py
+[0.599s] copying xplaneros2_main/takeoff.py -> /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/build/lib/xplaneros2_main
+[0.599s] copying xplaneros2_main/uav_state_node.py -> /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/build/lib/xplaneros2_main
+[0.599s] copying xplaneros2_main/xplane_main.py -> /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/build/lib/xplaneros2_main
+[0.599s] running install
+[0.599s] running install_lib
+[0.600s] copying /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/build/lib/xplaneros2_main/takeoff.py -> /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main
+[0.600s] copying /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/build/lib/xplaneros2_main/uav_state_node.py -> /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main
+[0.600s] copying /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/build/lib/xplaneros2_main/xplane_main.py -> /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main
+[0.600s] byte-compiling /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main/takeoff.py to takeoff.cpython-310.pyc
+[0.601s] byte-compiling /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main/uav_state_node.py to uav_state_node.cpython-310.pyc
+[0.601s] byte-compiling /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main/xplane_main.py to xplane_main.cpython-310.pyc
+[0.602s] running install_data
+[0.602s] running install_egg_info
+[0.603s] removing '/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main-0.0.0-py3.10.egg-info' (and everything under it)
+[0.603s] Copying ../../build/xplaneros2_main/xplaneros2_main.egg-info to /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main-0.0.0-py3.10.egg-info
+[0.604s] running install_scripts
+[0.624s] Installing uav_state_node script to /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/xplaneros2_main
+[0.625s] writing list of installed files to '/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/install.log'
+[0.643s] Invoked command in '/home/uas/Documents/blue/git_repos/xplane_ros2/src/xplaneros2_main' returned '0': PYTHONPATH=/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/prefix_override:/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/xplaneros2_main build --build-base /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/build install --record /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/install.log --single-version-externally-managed install_data

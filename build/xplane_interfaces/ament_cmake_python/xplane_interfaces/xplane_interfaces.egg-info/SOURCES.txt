@@ -1,0 +1,9 @@
+setup.py
+xplane_interfaces/__init__.py
+xplane_interfaces.egg-info/PKG-INFO
+xplane_interfaces.egg-info/SOURCES.txt
+xplane_interfaces.egg-info/dependency_links.txt
+xplane_interfaces.egg-info/top_level.txt
+xplane_interfaces/msg/__init__.py
+xplane_interfaces/msg/_uav_control.py
+xplane_interfaces/msg/_uav_state.py
