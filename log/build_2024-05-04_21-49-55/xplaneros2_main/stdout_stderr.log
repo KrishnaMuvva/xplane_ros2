@@ -1,0 +1,28 @@
+running egg_info
+writing ../../build/xplaneros2_main/xplaneros2_main.egg-info/PKG-INFO
+writing dependency_links to ../../build/xplaneros2_main/xplaneros2_main.egg-info/dependency_links.txt
+writing entry points to ../../build/xplaneros2_main/xplaneros2_main.egg-info/entry_points.txt
+writing requirements to ../../build/xplaneros2_main/xplaneros2_main.egg-info/requires.txt
+writing top-level names to ../../build/xplaneros2_main/xplaneros2_main.egg-info/top_level.txt
+reading manifest file '../../build/xplaneros2_main/xplaneros2_main.egg-info/SOURCES.txt'
+writing manifest file '../../build/xplaneros2_main/xplaneros2_main.egg-info/SOURCES.txt'
+running build
+running build_py
+copying xplaneros2_main/uav_state_node.py -> /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/build/lib/xplaneros2_main
+copying xplaneros2_main/xplane_main2.py -> /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/build/lib/xplaneros2_main
+copying xplaneros2_main/xplane_main.py -> /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/build/lib/xplaneros2_main
+running install
+running install_lib
+copying /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/build/lib/xplaneros2_main/uav_state_node.py -> /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main
+copying /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/build/lib/xplaneros2_main/xplane_main2.py -> /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main
+copying /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/build/lib/xplaneros2_main/xplane_main.py -> /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main
+byte-compiling /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main/uav_state_node.py to uav_state_node.cpython-310.pyc
+byte-compiling /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main/xplane_main2.py to xplane_main2.cpython-310.pyc
+byte-compiling /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main/xplane_main.py to xplane_main.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/xplaneros2_main/xplaneros2_main.egg-info to /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main-0.0.0-py3.10.egg-info
+running install_scripts
+Installing uav_state_node script to /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/xplaneros2_main
+writing list of installed files to '/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/install.log'

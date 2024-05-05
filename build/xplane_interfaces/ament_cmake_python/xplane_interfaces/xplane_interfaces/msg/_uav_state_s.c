@@ -128,6 +128,87 @@ bool xplane_interfaces__msg__uav_state__convert_from_py(PyObject * _pymsg, void 
     ros_message->airspeed = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
+  {  // local_x
+    PyObject * field = PyObject_GetAttrString(_pymsg, "local_x");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->local_x = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // local_y
+    PyObject * field = PyObject_GetAttrString(_pymsg, "local_y");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->local_y = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // local_z
+    PyObject * field = PyObject_GetAttrString(_pymsg, "local_z");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->local_z = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // local_vx
+    PyObject * field = PyObject_GetAttrString(_pymsg, "local_vx");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->local_vx = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // local_vy
+    PyObject * field = PyObject_GetAttrString(_pymsg, "local_vy");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->local_vy = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // local_vz
+    PyObject * field = PyObject_GetAttrString(_pymsg, "local_vz");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->local_vz = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // local_ax
+    PyObject * field = PyObject_GetAttrString(_pymsg, "local_ax");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->local_ax = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // local_ay
+    PyObject * field = PyObject_GetAttrString(_pymsg, "local_ay");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->local_ay = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // local_az
+    PyObject * field = PyObject_GetAttrString(_pymsg, "local_az");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->local_az = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -235,6 +316,105 @@ PyObject * xplane_interfaces__msg__uav_state__convert_to_py(void * raw_ros_messa
     field = PyFloat_FromDouble(ros_message->airspeed);
     {
       int rc = PyObject_SetAttrString(_pymessage, "airspeed", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // local_x
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->local_x);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "local_x", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // local_y
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->local_y);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "local_y", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // local_z
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->local_z);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "local_z", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // local_vx
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->local_vx);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "local_vx", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // local_vy
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->local_vy);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "local_vy", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // local_vz
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->local_vz);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "local_vz", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // local_ax
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->local_ax);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "local_ax", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // local_ay
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->local_ay);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "local_ay", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // local_az
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->local_az);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "local_az", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

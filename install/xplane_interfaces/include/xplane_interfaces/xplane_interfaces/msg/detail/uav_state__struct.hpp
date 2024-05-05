@@ -50,6 +50,15 @@ struct UAVState_
       this->pitch = 0.0f;
       this->heading = 0.0f;
       this->airspeed = 0.0f;
+      this->local_x = 0.0f;
+      this->local_y = 0.0f;
+      this->local_z = 0.0f;
+      this->local_vx = 0.0f;
+      this->local_vy = 0.0f;
+      this->local_vz = 0.0f;
+      this->local_ax = 0.0f;
+      this->local_ay = 0.0f;
+      this->local_az = 0.0f;
     }
   }
 
@@ -66,6 +75,15 @@ struct UAVState_
       this->pitch = 0.0f;
       this->heading = 0.0f;
       this->airspeed = 0.0f;
+      this->local_x = 0.0f;
+      this->local_y = 0.0f;
+      this->local_z = 0.0f;
+      this->local_vx = 0.0f;
+      this->local_vy = 0.0f;
+      this->local_vz = 0.0f;
+      this->local_ax = 0.0f;
+      this->local_ay = 0.0f;
+      this->local_az = 0.0f;
     }
   }
 
@@ -94,6 +112,33 @@ struct UAVState_
   using _airspeed_type =
     float;
   _airspeed_type airspeed;
+  using _local_x_type =
+    float;
+  _local_x_type local_x;
+  using _local_y_type =
+    float;
+  _local_y_type local_y;
+  using _local_z_type =
+    float;
+  _local_z_type local_z;
+  using _local_vx_type =
+    float;
+  _local_vx_type local_vx;
+  using _local_vy_type =
+    float;
+  _local_vy_type local_vy;
+  using _local_vz_type =
+    float;
+  _local_vz_type local_vz;
+  using _local_ax_type =
+    float;
+  _local_ax_type local_ax;
+  using _local_ay_type =
+    float;
+  _local_ay_type local_ay;
+  using _local_az_type =
+    float;
+  _local_az_type local_az;
 
   // setters for named parameter idiom
   Type & set__header(
@@ -142,6 +187,60 @@ struct UAVState_
     const float & _arg)
   {
     this->airspeed = _arg;
+    return *this;
+  }
+  Type & set__local_x(
+    const float & _arg)
+  {
+    this->local_x = _arg;
+    return *this;
+  }
+  Type & set__local_y(
+    const float & _arg)
+  {
+    this->local_y = _arg;
+    return *this;
+  }
+  Type & set__local_z(
+    const float & _arg)
+  {
+    this->local_z = _arg;
+    return *this;
+  }
+  Type & set__local_vx(
+    const float & _arg)
+  {
+    this->local_vx = _arg;
+    return *this;
+  }
+  Type & set__local_vy(
+    const float & _arg)
+  {
+    this->local_vy = _arg;
+    return *this;
+  }
+  Type & set__local_vz(
+    const float & _arg)
+  {
+    this->local_vz = _arg;
+    return *this;
+  }
+  Type & set__local_ax(
+    const float & _arg)
+  {
+    this->local_ax = _arg;
+    return *this;
+  }
+  Type & set__local_ay(
+    const float & _arg)
+  {
+    this->local_ay = _arg;
+    return *this;
+  }
+  Type & set__local_az(
+    const float & _arg)
+  {
+    this->local_az = _arg;
     return *this;
   }
 
@@ -209,6 +308,33 @@ struct UAVState_
       return false;
     }
     if (this->airspeed != other.airspeed) {
+      return false;
+    }
+    if (this->local_x != other.local_x) {
+      return false;
+    }
+    if (this->local_y != other.local_y) {
+      return false;
+    }
+    if (this->local_z != other.local_z) {
+      return false;
+    }
+    if (this->local_vx != other.local_vx) {
+      return false;
+    }
+    if (this->local_vy != other.local_vy) {
+      return false;
+    }
+    if (this->local_vz != other.local_vz) {
+      return false;
+    }
+    if (this->local_ax != other.local_ax) {
+      return false;
+    }
+    if (this->local_ay != other.local_ay) {
+      return false;
+    }
+    if (this->local_az != other.local_az) {
       return false;
     }
     return true;

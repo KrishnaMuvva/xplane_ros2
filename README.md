@@ -21,6 +21,12 @@ Please follow the instructions in the below video
 
 ## Installation of Xplane ROS2 Package
 
+``` shell
+
+git clone https://github.com/KrishnaMuvva/xplane_ros2.git
+
+```
+
 ## Usage of Package
 
 ### Autonomous Takeoff

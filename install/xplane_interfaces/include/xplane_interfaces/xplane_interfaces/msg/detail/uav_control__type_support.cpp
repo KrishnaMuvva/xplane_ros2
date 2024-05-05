@@ -56,14 +56,14 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember UAVControl_me
     nullptr  // resize(index) function pointer
   },
   {
-    "alieron",  // name
+    "aileron",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(xplane_interfaces::msg::UAVControl, alieron),  // bytes offset in struct
+    offsetof(xplane_interfaces::msg::UAVControl, aileron),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer

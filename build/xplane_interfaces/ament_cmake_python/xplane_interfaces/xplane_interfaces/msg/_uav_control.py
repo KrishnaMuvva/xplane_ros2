@@ -58,14 +58,14 @@ class UAVControl(metaclass=Metaclass_UAVControl):
 
     __slots__ = [
         '_throttle',
-        '_alieron',
+        '_aileron',
         '_elevator',
         '_rudder',
     ]
 
     _fields_and_field_types = {
         'throttle': 'float',
-        'alieron': 'float',
+        'aileron': 'float',
         'elevator': 'float',
         'rudder': 'float',
     }
@@ -82,7 +82,7 @@ class UAVControl(metaclass=Metaclass_UAVControl):
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.throttle = kwargs.get('throttle', float())
-        self.alieron = kwargs.get('alieron', float())
+        self.aileron = kwargs.get('aileron', float())
         self.elevator = kwargs.get('elevator', float())
         self.rudder = kwargs.get('rudder', float())
 
@@ -117,7 +117,7 @@ class UAVControl(metaclass=Metaclass_UAVControl):
             return False
         if self.throttle != other.throttle:
             return False
-        if self.alieron != other.alieron:
+        if self.aileron != other.aileron:
             return False
         if self.elevator != other.elevator:
             return False
@@ -146,19 +146,19 @@ class UAVControl(metaclass=Metaclass_UAVControl):
         self._throttle = value
 
     @builtins.property
-    def alieron(self):
-        """Message field 'alieron'."""
-        return self._alieron
+    def aileron(self):
+        """Message field 'aileron'."""
+        return self._aileron
 
-    @alieron.setter
-    def alieron(self, value):
+    @aileron.setter
+    def aileron(self, value):
         if __debug__:
             assert \
                 isinstance(value, float), \
-                "The 'alieron' field must be of type 'float'"
+                "The 'aileron' field must be of type 'float'"
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'alieron' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._alieron = value
+                "The 'aileron' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._aileron = value
 
     @builtins.property
     def elevator(self):

@@ -59,13 +59,13 @@ bool xplane_interfaces__msg__uav_control__convert_from_py(PyObject * _pymsg, voi
     ros_message->throttle = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // alieron
-    PyObject * field = PyObject_GetAttrString(_pymsg, "alieron");
+  {  // aileron
+    PyObject * field = PyObject_GetAttrString(_pymsg, "aileron");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->alieron = (float)PyFloat_AS_DOUBLE(field);
+    ros_message->aileron = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
   {  // elevator
@@ -119,11 +119,11 @@ PyObject * xplane_interfaces__msg__uav_control__convert_to_py(void * raw_ros_mes
       }
     }
   }
-  {  // alieron
+  {  // aileron
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->alieron);
+    field = PyFloat_FromDouble(ros_message->aileron);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "alieron", field);
+      int rc = PyObject_SetAttrString(_pymessage, "aileron", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

@@ -32,6 +32,15 @@ typedef struct xplane_interfaces__msg__UAVState
   float pitch;
   float heading;
   float airspeed;
+  float local_x;
+  float local_y;
+  float local_z;
+  float local_vx;
+  float local_vy;
+  float local_vz;
+  float local_ax;
+  float local_ay;
+  float local_az;
 } xplane_interfaces__msg__UAVState;
 
 // Struct for a sequence of xplane_interfaces__msg__UAVState.

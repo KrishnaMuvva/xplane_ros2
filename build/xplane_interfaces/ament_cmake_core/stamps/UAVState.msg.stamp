@@ -6,3 +6,12 @@ float32 roll
 float32 pitch
 float32 heading
 float32 airspeed
+float32 local_x
+float32 local_y
+float32 local_z
+float32 local_vx
+float32 local_vy
+float32 local_vz
+float32 local_ax
+float32 local_ay
+float32 local_az

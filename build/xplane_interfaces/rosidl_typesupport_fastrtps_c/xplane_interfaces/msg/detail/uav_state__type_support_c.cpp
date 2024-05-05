@@ -113,6 +113,51 @@ static bool _UAVState__cdr_serialize(
     cdr << ros_message->airspeed;
   }
 
+  // Field name: local_x
+  {
+    cdr << ros_message->local_x;
+  }
+
+  // Field name: local_y
+  {
+    cdr << ros_message->local_y;
+  }
+
+  // Field name: local_z
+  {
+    cdr << ros_message->local_z;
+  }
+
+  // Field name: local_vx
+  {
+    cdr << ros_message->local_vx;
+  }
+
+  // Field name: local_vy
+  {
+    cdr << ros_message->local_vy;
+  }
+
+  // Field name: local_vz
+  {
+    cdr << ros_message->local_vz;
+  }
+
+  // Field name: local_ax
+  {
+    cdr << ros_message->local_ax;
+  }
+
+  // Field name: local_ay
+  {
+    cdr << ros_message->local_ay;
+  }
+
+  // Field name: local_az
+  {
+    cdr << ros_message->local_az;
+  }
+
   return true;
 }
 
@@ -172,6 +217,51 @@ static bool _UAVState__cdr_deserialize(
   // Field name: airspeed
   {
     cdr >> ros_message->airspeed;
+  }
+
+  // Field name: local_x
+  {
+    cdr >> ros_message->local_x;
+  }
+
+  // Field name: local_y
+  {
+    cdr >> ros_message->local_y;
+  }
+
+  // Field name: local_z
+  {
+    cdr >> ros_message->local_z;
+  }
+
+  // Field name: local_vx
+  {
+    cdr >> ros_message->local_vx;
+  }
+
+  // Field name: local_vy
+  {
+    cdr >> ros_message->local_vy;
+  }
+
+  // Field name: local_vz
+  {
+    cdr >> ros_message->local_vz;
+  }
+
+  // Field name: local_ax
+  {
+    cdr >> ros_message->local_ax;
+  }
+
+  // Field name: local_ay
+  {
+    cdr >> ros_message->local_ay;
+  }
+
+  // Field name: local_az
+  {
+    cdr >> ros_message->local_az;
   }
 
   return true;
@@ -234,6 +324,60 @@ size_t get_serialized_size_xplane_interfaces__msg__UAVState(
   // field.name airspeed
   {
     size_t item_size = sizeof(ros_message->airspeed);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name local_x
+  {
+    size_t item_size = sizeof(ros_message->local_x);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name local_y
+  {
+    size_t item_size = sizeof(ros_message->local_y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name local_z
+  {
+    size_t item_size = sizeof(ros_message->local_z);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name local_vx
+  {
+    size_t item_size = sizeof(ros_message->local_vx);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name local_vy
+  {
+    size_t item_size = sizeof(ros_message->local_vy);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name local_vz
+  {
+    size_t item_size = sizeof(ros_message->local_vz);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name local_ax
+  {
+    size_t item_size = sizeof(ros_message->local_ax);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name local_ay
+  {
+    size_t item_size = sizeof(ros_message->local_ay);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name local_az
+  {
+    size_t item_size = sizeof(ros_message->local_az);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -341,6 +485,78 @@ size_t max_serialized_size_xplane_interfaces__msg__UAVState(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
+  // member: local_x
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: local_y
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: local_z
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: local_vx
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: local_vy
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: local_vz
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: local_ax
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: local_ay
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: local_az
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -350,7 +566,7 @@ size_t max_serialized_size_xplane_interfaces__msg__UAVState(
     using DataType = xplane_interfaces__msg__UAVState;
     is_plain =
       (
-      offsetof(DataType, airspeed) +
+      offsetof(DataType, local_az) +
       last_member_size
       ) == ret_val;
   }

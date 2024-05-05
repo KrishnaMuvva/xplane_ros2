@@ -53,15 +53,15 @@ private:
   ::xplane_interfaces::msg::UAVControl msg_;
 };
 
-class Init_UAVControl_alieron
+class Init_UAVControl_aileron
 {
 public:
-  explicit Init_UAVControl_alieron(::xplane_interfaces::msg::UAVControl & msg)
+  explicit Init_UAVControl_aileron(::xplane_interfaces::msg::UAVControl & msg)
   : msg_(msg)
   {}
-  Init_UAVControl_elevator alieron(::xplane_interfaces::msg::UAVControl::_alieron_type arg)
+  Init_UAVControl_elevator aileron(::xplane_interfaces::msg::UAVControl::_aileron_type arg)
   {
-    msg_.alieron = std::move(arg);
+    msg_.aileron = std::move(arg);
     return Init_UAVControl_elevator(msg_);
   }
 
@@ -75,10 +75,10 @@ public:
   Init_UAVControl_throttle()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_UAVControl_alieron throttle(::xplane_interfaces::msg::UAVControl::_throttle_type arg)
+  Init_UAVControl_aileron throttle(::xplane_interfaces::msg::UAVControl::_throttle_type arg)
   {
     msg_.throttle = std::move(arg);
-    return Init_UAVControl_alieron(msg_);
+    return Init_UAVControl_aileron(msg_);
   }
 
 private:

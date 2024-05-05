@@ -39,7 +39,7 @@ struct UAVControl_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->throttle = 0.0f;
-      this->alieron = 0.0f;
+      this->aileron = 0.0f;
       this->elevator = 0.0f;
       this->rudder = 0.0f;
     }
@@ -52,7 +52,7 @@ struct UAVControl_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->throttle = 0.0f;
-      this->alieron = 0.0f;
+      this->aileron = 0.0f;
       this->elevator = 0.0f;
       this->rudder = 0.0f;
     }
@@ -62,9 +62,9 @@ struct UAVControl_
   using _throttle_type =
     float;
   _throttle_type throttle;
-  using _alieron_type =
+  using _aileron_type =
     float;
-  _alieron_type alieron;
+  _aileron_type aileron;
   using _elevator_type =
     float;
   _elevator_type elevator;
@@ -79,10 +79,10 @@ struct UAVControl_
     this->throttle = _arg;
     return *this;
   }
-  Type & set__alieron(
+  Type & set__aileron(
     const float & _arg)
   {
-    this->alieron = _arg;
+    this->aileron = _arg;
     return *this;
   }
   Type & set__elevator(
@@ -143,7 +143,7 @@ struct UAVControl_
     if (this->throttle != other.throttle) {
       return false;
     }
-    if (this->alieron != other.alieron) {
+    if (this->aileron != other.aileron) {
       return false;
     }
     if (this->elevator != other.elevator) {

@@ -32,10 +32,10 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
-  // member: alieron
+  // member: aileron
   {
-    out << "alieron: ";
-    rosidl_generator_traits::value_to_yaml(msg.alieron, out);
+    out << "aileron: ";
+    rosidl_generator_traits::value_to_yaml(msg.aileron, out);
     out << ", ";
   }
 
@@ -68,13 +68,13 @@ inline void to_block_style_yaml(
     out << "\n";
   }
 
-  // member: alieron
+  // member: aileron
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "alieron: ";
-    rosidl_generator_traits::value_to_yaml(msg.alieron, out);
+    out << "aileron: ";
+    rosidl_generator_traits::value_to_yaml(msg.aileron, out);
     out << "\n";
   }
 

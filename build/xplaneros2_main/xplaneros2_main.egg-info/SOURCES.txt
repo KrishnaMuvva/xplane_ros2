@@ -13,7 +13,11 @@ test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
 xplaneros2_main/__init__.py
+xplaneros2_main/atest.py
+xplaneros2_main/pid_control.py
 xplaneros2_main/takeoff.py
+xplaneros2_main/test.py
 xplaneros2_main/uav_control_node.py
 xplaneros2_main/uav_state_node.py
 xplaneros2_main/xplane_main.py
+xplaneros2_main/xplane_main2.py

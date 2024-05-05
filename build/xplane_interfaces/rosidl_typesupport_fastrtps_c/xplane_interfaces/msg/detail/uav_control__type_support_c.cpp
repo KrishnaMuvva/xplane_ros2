@@ -54,9 +54,9 @@ static bool _UAVControl__cdr_serialize(
     cdr << ros_message->throttle;
   }
 
-  // Field name: alieron
+  // Field name: aileron
   {
-    cdr << ros_message->alieron;
+    cdr << ros_message->aileron;
   }
 
   // Field name: elevator
@@ -86,9 +86,9 @@ static bool _UAVControl__cdr_deserialize(
     cdr >> ros_message->throttle;
   }
 
-  // Field name: alieron
+  // Field name: aileron
   {
-    cdr >> ros_message->alieron;
+    cdr >> ros_message->aileron;
   }
 
   // Field name: elevator
@@ -124,9 +124,9 @@ size_t get_serialized_size_xplane_interfaces__msg__UAVControl(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name alieron
+  // field.name aileron
   {
-    size_t item_size = sizeof(ros_message->alieron);
+    size_t item_size = sizeof(ros_message->aileron);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -179,7 +179,7 @@ size_t max_serialized_size_xplane_interfaces__msg__UAVControl(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: alieron
+  // member: aileron
   {
     size_t array_size = 1;
 

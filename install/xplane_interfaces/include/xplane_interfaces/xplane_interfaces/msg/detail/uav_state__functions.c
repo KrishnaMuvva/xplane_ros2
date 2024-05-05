@@ -33,6 +33,15 @@ xplane_interfaces__msg__UAVState__init(xplane_interfaces__msg__UAVState * msg)
   // pitch
   // heading
   // airspeed
+  // local_x
+  // local_y
+  // local_z
+  // local_vx
+  // local_vy
+  // local_vz
+  // local_ax
+  // local_ay
+  // local_az
   return true;
 }
 
@@ -51,6 +60,15 @@ xplane_interfaces__msg__UAVState__fini(xplane_interfaces__msg__UAVState * msg)
   // pitch
   // heading
   // airspeed
+  // local_x
+  // local_y
+  // local_z
+  // local_vx
+  // local_vy
+  // local_vz
+  // local_ax
+  // local_ay
+  // local_az
 }
 
 bool
@@ -93,6 +111,42 @@ xplane_interfaces__msg__UAVState__are_equal(const xplane_interfaces__msg__UAVSta
   if (lhs->airspeed != rhs->airspeed) {
     return false;
   }
+  // local_x
+  if (lhs->local_x != rhs->local_x) {
+    return false;
+  }
+  // local_y
+  if (lhs->local_y != rhs->local_y) {
+    return false;
+  }
+  // local_z
+  if (lhs->local_z != rhs->local_z) {
+    return false;
+  }
+  // local_vx
+  if (lhs->local_vx != rhs->local_vx) {
+    return false;
+  }
+  // local_vy
+  if (lhs->local_vy != rhs->local_vy) {
+    return false;
+  }
+  // local_vz
+  if (lhs->local_vz != rhs->local_vz) {
+    return false;
+  }
+  // local_ax
+  if (lhs->local_ax != rhs->local_ax) {
+    return false;
+  }
+  // local_ay
+  if (lhs->local_ay != rhs->local_ay) {
+    return false;
+  }
+  // local_az
+  if (lhs->local_az != rhs->local_az) {
+    return false;
+  }
   return true;
 }
 
@@ -124,6 +178,24 @@ xplane_interfaces__msg__UAVState__copy(
   output->heading = input->heading;
   // airspeed
   output->airspeed = input->airspeed;
+  // local_x
+  output->local_x = input->local_x;
+  // local_y
+  output->local_y = input->local_y;
+  // local_z
+  output->local_z = input->local_z;
+  // local_vx
+  output->local_vx = input->local_vx;
+  // local_vy
+  output->local_vy = input->local_vy;
+  // local_vz
+  output->local_vz = input->local_vz;
+  // local_ax
+  output->local_ax = input->local_ax;
+  // local_ay
+  output->local_ay = input->local_ay;
+  // local_az
+  output->local_az = input->local_az;
   return true;
 }
 

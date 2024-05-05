@@ -34,8 +34,8 @@ cdr_serialize(
 {
   // Member: throttle
   cdr << ros_message.throttle;
-  // Member: alieron
-  cdr << ros_message.alieron;
+  // Member: aileron
+  cdr << ros_message.aileron;
   // Member: elevator
   cdr << ros_message.elevator;
   // Member: rudder
@@ -52,8 +52,8 @@ cdr_deserialize(
   // Member: throttle
   cdr >> ros_message.throttle;
 
-  // Member: alieron
-  cdr >> ros_message.alieron;
+  // Member: aileron
+  cdr >> ros_message.aileron;
 
   // Member: elevator
   cdr >> ros_message.elevator;
@@ -83,9 +83,9 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: alieron
+  // Member: aileron
   {
-    size_t item_size = sizeof(ros_message.alieron);
+    size_t item_size = sizeof(ros_message.aileron);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -134,7 +134,7 @@ max_serialized_size_UAVControl(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
-  // Member: alieron
+  // Member: aileron
   {
     size_t array_size = 1;
 

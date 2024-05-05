@@ -18,7 +18,7 @@ xplane_interfaces__msg__UAVControl__init(xplane_interfaces__msg__UAVControl * ms
     return false;
   }
   // throttle
-  // alieron
+  // aileron
   // elevator
   // rudder
   return true;
@@ -31,7 +31,7 @@ xplane_interfaces__msg__UAVControl__fini(xplane_interfaces__msg__UAVControl * ms
     return;
   }
   // throttle
-  // alieron
+  // aileron
   // elevator
   // rudder
 }
@@ -46,8 +46,8 @@ xplane_interfaces__msg__UAVControl__are_equal(const xplane_interfaces__msg__UAVC
   if (lhs->throttle != rhs->throttle) {
     return false;
   }
-  // alieron
-  if (lhs->alieron != rhs->alieron) {
+  // aileron
+  if (lhs->aileron != rhs->aileron) {
     return false;
   }
   // elevator
@@ -71,8 +71,8 @@ xplane_interfaces__msg__UAVControl__copy(
   }
   // throttle
   output->throttle = input->throttle;
-  // alieron
-  output->alieron = input->alieron;
+  // aileron
+  output->aileron = input->aileron;
   // elevator
   output->elevator = input->elevator;
   // rudder

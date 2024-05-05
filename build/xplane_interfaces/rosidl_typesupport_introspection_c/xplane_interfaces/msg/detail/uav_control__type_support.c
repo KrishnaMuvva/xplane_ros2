@@ -50,14 +50,14 @@ static rosidl_typesupport_introspection_c__MessageMember xplane_interfaces__msg_
     NULL  // resize(index) function pointer
   },
   {
-    "alieron",  // name
+    "aileron",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(xplane_interfaces__msg__UAVControl, alieron),  // bytes offset in struct
+    offsetof(xplane_interfaces__msg__UAVControl, aileron),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

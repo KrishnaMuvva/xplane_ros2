@@ -20,7 +20,7 @@ class Xplane_Control_Node(Node):
 
 		self.uav_control = UAVControl()
 
-		self.throttle, self.elevator, self.alieron, self.rudder = 3, 0, 1, 2
+		self.throttle, self.elevator, self.aileron, self.rudder = 3, 0, 1, 2
 
 		self.control = [0, 0, 0, 0]
 
@@ -41,7 +41,7 @@ class Xplane_Control_Node(Node):
 	
 	def timer_callback(self):
 
-		self.control[self.throttle], self.control[self.alieron] = self.uav_control.throttle, self.uav_control.alieron
+		self.control[self.throttle], self.control[self.aileron] = self.uav_control.throttle, self.uav_control.aileron
 
 		self.control[self.elevator], self.control[self.rudder] = self.uav_control.elevator, self.uav_control.rudder
 

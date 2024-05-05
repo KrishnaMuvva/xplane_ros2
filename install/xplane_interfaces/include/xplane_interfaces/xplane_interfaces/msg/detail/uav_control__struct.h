@@ -21,7 +21,7 @@ extern "C"
 typedef struct xplane_interfaces__msg__UAVControl
 {
   float throttle;
-  float alieron;
+  float aileron;
   float elevator;
   float rudder;
 } xplane_interfaces__msg__UAVControl;

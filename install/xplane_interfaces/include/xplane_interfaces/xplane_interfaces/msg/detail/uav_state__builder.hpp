@@ -21,16 +21,160 @@ namespace msg
 namespace builder
 {
 
+class Init_UAVState_local_az
+{
+public:
+  explicit Init_UAVState_local_az(::xplane_interfaces::msg::UAVState & msg)
+  : msg_(msg)
+  {}
+  ::xplane_interfaces::msg::UAVState local_az(::xplane_interfaces::msg::UAVState::_local_az_type arg)
+  {
+    msg_.local_az = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::xplane_interfaces::msg::UAVState msg_;
+};
+
+class Init_UAVState_local_ay
+{
+public:
+  explicit Init_UAVState_local_ay(::xplane_interfaces::msg::UAVState & msg)
+  : msg_(msg)
+  {}
+  Init_UAVState_local_az local_ay(::xplane_interfaces::msg::UAVState::_local_ay_type arg)
+  {
+    msg_.local_ay = std::move(arg);
+    return Init_UAVState_local_az(msg_);
+  }
+
+private:
+  ::xplane_interfaces::msg::UAVState msg_;
+};
+
+class Init_UAVState_local_ax
+{
+public:
+  explicit Init_UAVState_local_ax(::xplane_interfaces::msg::UAVState & msg)
+  : msg_(msg)
+  {}
+  Init_UAVState_local_ay local_ax(::xplane_interfaces::msg::UAVState::_local_ax_type arg)
+  {
+    msg_.local_ax = std::move(arg);
+    return Init_UAVState_local_ay(msg_);
+  }
+
+private:
+  ::xplane_interfaces::msg::UAVState msg_;
+};
+
+class Init_UAVState_local_vz
+{
+public:
+  explicit Init_UAVState_local_vz(::xplane_interfaces::msg::UAVState & msg)
+  : msg_(msg)
+  {}
+  Init_UAVState_local_ax local_vz(::xplane_interfaces::msg::UAVState::_local_vz_type arg)
+  {
+    msg_.local_vz = std::move(arg);
+    return Init_UAVState_local_ax(msg_);
+  }
+
+private:
+  ::xplane_interfaces::msg::UAVState msg_;
+};
+
+class Init_UAVState_local_vy
+{
+public:
+  explicit Init_UAVState_local_vy(::xplane_interfaces::msg::UAVState & msg)
+  : msg_(msg)
+  {}
+  Init_UAVState_local_vz local_vy(::xplane_interfaces::msg::UAVState::_local_vy_type arg)
+  {
+    msg_.local_vy = std::move(arg);
+    return Init_UAVState_local_vz(msg_);
+  }
+
+private:
+  ::xplane_interfaces::msg::UAVState msg_;
+};
+
+class Init_UAVState_local_vx
+{
+public:
+  explicit Init_UAVState_local_vx(::xplane_interfaces::msg::UAVState & msg)
+  : msg_(msg)
+  {}
+  Init_UAVState_local_vy local_vx(::xplane_interfaces::msg::UAVState::_local_vx_type arg)
+  {
+    msg_.local_vx = std::move(arg);
+    return Init_UAVState_local_vy(msg_);
+  }
+
+private:
+  ::xplane_interfaces::msg::UAVState msg_;
+};
+
+class Init_UAVState_local_z
+{
+public:
+  explicit Init_UAVState_local_z(::xplane_interfaces::msg::UAVState & msg)
+  : msg_(msg)
+  {}
+  Init_UAVState_local_vx local_z(::xplane_interfaces::msg::UAVState::_local_z_type arg)
+  {
+    msg_.local_z = std::move(arg);
+    return Init_UAVState_local_vx(msg_);
+  }
+
+private:
+  ::xplane_interfaces::msg::UAVState msg_;
+};
+
+class Init_UAVState_local_y
+{
+public:
+  explicit Init_UAVState_local_y(::xplane_interfaces::msg::UAVState & msg)
+  : msg_(msg)
+  {}
+  Init_UAVState_local_z local_y(::xplane_interfaces::msg::UAVState::_local_y_type arg)
+  {
+    msg_.local_y = std::move(arg);
+    return Init_UAVState_local_z(msg_);
+  }
+
+private:
+  ::xplane_interfaces::msg::UAVState msg_;
+};
+
+class Init_UAVState_local_x
+{
+public:
+  explicit Init_UAVState_local_x(::xplane_interfaces::msg::UAVState & msg)
+  : msg_(msg)
+  {}
+  Init_UAVState_local_y local_x(::xplane_interfaces::msg::UAVState::_local_x_type arg)
+  {
+    msg_.local_x = std::move(arg);
+    return Init_UAVState_local_y(msg_);
+  }
+
+private:
+  ::xplane_interfaces::msg::UAVState msg_;
+};
+
 class Init_UAVState_airspeed
 {
 public:
   explicit Init_UAVState_airspeed(::xplane_interfaces::msg::UAVState & msg)
   : msg_(msg)
   {}
-  ::xplane_interfaces::msg::UAVState airspeed(::xplane_interfaces::msg::UAVState::_airspeed_type arg)
+  Init_UAVState_local_x airspeed(::xplane_interfaces::msg::UAVState::_airspeed_type arg)
   {
     msg_.airspeed = std::move(arg);
-    return std::move(msg_);
+    return Init_UAVState_local_x(msg_);
   }
 
 private:

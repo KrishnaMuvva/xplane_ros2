@@ -69,6 +69,15 @@ class UAVState(metaclass=Metaclass_UAVState):
         '_pitch',
         '_heading',
         '_airspeed',
+        '_local_x',
+        '_local_y',
+        '_local_z',
+        '_local_vx',
+        '_local_vy',
+        '_local_vz',
+        '_local_ax',
+        '_local_ay',
+        '_local_az',
     ]
 
     _fields_and_field_types = {
@@ -80,6 +89,15 @@ class UAVState(metaclass=Metaclass_UAVState):
         'pitch': 'float',
         'heading': 'float',
         'airspeed': 'float',
+        'local_x': 'float',
+        'local_y': 'float',
+        'local_z': 'float',
+        'local_vx': 'float',
+        'local_vy': 'float',
+        'local_vz': 'float',
+        'local_ax': 'float',
+        'local_ay': 'float',
+        'local_az': 'float',
     }
 
     SLOT_TYPES = (
@@ -87,6 +105,15 @@ class UAVState(metaclass=Metaclass_UAVState):
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
@@ -106,6 +133,15 @@ class UAVState(metaclass=Metaclass_UAVState):
         self.pitch = kwargs.get('pitch', float())
         self.heading = kwargs.get('heading', float())
         self.airspeed = kwargs.get('airspeed', float())
+        self.local_x = kwargs.get('local_x', float())
+        self.local_y = kwargs.get('local_y', float())
+        self.local_z = kwargs.get('local_z', float())
+        self.local_vx = kwargs.get('local_vx', float())
+        self.local_vy = kwargs.get('local_vy', float())
+        self.local_vz = kwargs.get('local_vz', float())
+        self.local_ax = kwargs.get('local_ax', float())
+        self.local_ay = kwargs.get('local_ay', float())
+        self.local_az = kwargs.get('local_az', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -151,6 +187,24 @@ class UAVState(metaclass=Metaclass_UAVState):
         if self.heading != other.heading:
             return False
         if self.airspeed != other.airspeed:
+            return False
+        if self.local_x != other.local_x:
+            return False
+        if self.local_y != other.local_y:
+            return False
+        if self.local_z != other.local_z:
+            return False
+        if self.local_vx != other.local_vx:
+            return False
+        if self.local_vy != other.local_vy:
+            return False
+        if self.local_vz != other.local_vz:
+            return False
+        if self.local_ax != other.local_ax:
+            return False
+        if self.local_ay != other.local_ay:
+            return False
+        if self.local_az != other.local_az:
             return False
         return True
 
@@ -277,3 +331,138 @@ class UAVState(metaclass=Metaclass_UAVState):
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
                 "The 'airspeed' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._airspeed = value
+
+    @builtins.property
+    def local_x(self):
+        """Message field 'local_x'."""
+        return self._local_x
+
+    @local_x.setter
+    def local_x(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'local_x' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'local_x' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._local_x = value
+
+    @builtins.property
+    def local_y(self):
+        """Message field 'local_y'."""
+        return self._local_y
+
+    @local_y.setter
+    def local_y(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'local_y' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'local_y' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._local_y = value
+
+    @builtins.property
+    def local_z(self):
+        """Message field 'local_z'."""
+        return self._local_z
+
+    @local_z.setter
+    def local_z(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'local_z' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'local_z' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._local_z = value
+
+    @builtins.property
+    def local_vx(self):
+        """Message field 'local_vx'."""
+        return self._local_vx
+
+    @local_vx.setter
+    def local_vx(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'local_vx' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'local_vx' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._local_vx = value
+
+    @builtins.property
+    def local_vy(self):
+        """Message field 'local_vy'."""
+        return self._local_vy
+
+    @local_vy.setter
+    def local_vy(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'local_vy' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'local_vy' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._local_vy = value
+
+    @builtins.property
+    def local_vz(self):
+        """Message field 'local_vz'."""
+        return self._local_vz
+
+    @local_vz.setter
+    def local_vz(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'local_vz' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'local_vz' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._local_vz = value
+
+    @builtins.property
+    def local_ax(self):
+        """Message field 'local_ax'."""
+        return self._local_ax
+
+    @local_ax.setter
+    def local_ax(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'local_ax' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'local_ax' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._local_ax = value
+
+    @builtins.property
+    def local_ay(self):
+        """Message field 'local_ay'."""
+        return self._local_ay
+
+    @local_ay.setter
+    def local_ay(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'local_ay' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'local_ay' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._local_ay = value
+
+    @builtins.property
+    def local_az(self):
+        """Message field 'local_az'."""
+        return self._local_az
+
+    @local_az.setter
+    def local_az(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'local_az' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'local_az' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._local_az = value

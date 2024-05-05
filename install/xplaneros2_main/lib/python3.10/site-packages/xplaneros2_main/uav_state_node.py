@@ -22,11 +22,23 @@ class Xplane_State_Node(Node):
 
 		self.drefs = []
 
-		self.drefs.append("sim/flightmodel/position/groundspeed")
-		self.drefs.append("sim/flightmodel/position/indicated_airspeed")
-		self.drefs.append("sim/flightmodel/position/vh_ind")
-		self.drefs.append("sim/flightmodel/controls/parkbrake")
-		self.drefs.append("sim/weather/wind_speed_kt")
+		self.drefs.append("sim/flightmodel/position/groundspeed")              # 0
+		self.drefs.append("sim/flightmodel/position/indicated_airspeed")       # 1
+		self.drefs.append("sim/flightmodel/position/vh_ind")                   # 2
+		self.drefs.append("sim/flightmodel/controls/parkbrake")                # 3
+		self.drefs.append("sim/weather/wind_speed_kt")                         # 4
+
+		self.drefs.append("sim/flightmodel/position/local_x")                  # 5
+		self.drefs.append("sim/flightmodel/position/local_y")                  # 6
+		self.drefs.append("sim/flightmodel/position/local_z")                  # 7
+
+		self.drefs.append("sim/flightmodel/position/local_vx")                 # 8
+		self.drefs.append("sim/flightmodel/position/local_vy")                 # 9
+		self.drefs.append("sim/flightmodel/position/local_vz")                 # 10
+
+		self.drefs.append("sim/flightmodel/position/local_ax")                 # 11
+		self.drefs.append("sim/flightmodel/position/local_ay")                 # 12
+		self.drefs.append("sim/flightmodel/position/local_az")                 # 13
 
 		self.state_publisher = self.create_publisher(UAVState, '/xplane/uav/state', 1)
 
@@ -47,7 +59,15 @@ class Xplane_State_Node(Node):
 
 		self.uav_state.airspeed = self.aug_positions[1][0]
 
+		self.uav_state.local_x, self.uav_state.local_y, self.uav_state.local_z = self.aug_positions[5][0], self.aug_positions[6][0], self.aug_positions[7][0]
+
+		self.uav_state.local_vx, self.uav_state.local_vy, self.uav_state.local_vz = self.aug_positions[8][0], self.aug_positions[9][0], self.aug_positions[10][0]
+
+		self.uav_state.local_ax, self.uav_state.local_ay, self.uav_state.local_az = self.aug_positions[11][0], self.aug_positions[12][0], self.aug_positions[13][0]
+
 		#print(self.uav_state)
+
+		#print(len(self.drefs))
 
 		self.state_publisher.publish(self.uav_state)
 
