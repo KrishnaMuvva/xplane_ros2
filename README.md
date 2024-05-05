@@ -56,6 +56,14 @@ source install/setup.bash
 ```
 
 
+Add environmetn variables to bash
+
+``` shell
+
+echo "source install/setup.bash" >> ~/.bashrc
+
+```
+
 
 ## Usage of Package
 
