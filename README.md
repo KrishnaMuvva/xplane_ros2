@@ -25,6 +25,12 @@ Please follow the instructions in the below video
 
 git clone https://github.com/KrishnaMuvva/xplane_ros2.git
 
+cd xplane_ros2
+
+colcon build
+
+source install/setup.bash
+
 ```
 
 ## Usage of Package
