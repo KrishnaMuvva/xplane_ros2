@@ -21,11 +21,17 @@ Please follow the instructions in the below video
 
 ## Installation of Xplane ROS2 Package
 
+Please execute the following commands in your shell to build the package
+
+Clone repository
+
 ``` shell
 
 git clone https://github.com/KrishnaMuvva/xplane_ros2.git
 
 ```
+
+Navigate to the package directory
 
 ``` shell
 
@@ -33,11 +39,15 @@ cd xplane_ros2
 
 ```
 
+Build the package
+
 ``` shell
 
 colcon build
 
 ```
+
+Add into environment
 
 ``` shell
 
