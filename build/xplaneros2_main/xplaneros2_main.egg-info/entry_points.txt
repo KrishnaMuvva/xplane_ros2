@@ -1,3 +1,5 @@
 [console_scripts]
+data_collection = xplaneros2_main.data_collection:main
+uav_control_node = xplaneros2_main.uav_control_node:main
 uav_state_node = xplaneros2_main.uav_state_node:main
 

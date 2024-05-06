@@ -35,21 +35,44 @@ class Xplane_ROS2(Node):
 
 		self.takeoff_pitch, self.cruise_pitch, self.land_pitch = 8, 1, -4
 
-		self.cruise_alt_goal, self.min_takeoff_speed = 800, 90
+		self.cruise_alt_goal, self.min_takeoff_speed = 400, 90
 
-		self.init_head = self.uav_state.heading
+		self.takeoff_speed, self.cruise_speed = 250, 250
 
-		self.kpe, self.kpa, self.kpr, self.kpt = 0.05,  0.0,  0.09,   0
-		self.kde, self.kda, self.kdr, self.kdt  = 0.00, 0.00,  0.06,  0
-		self.kie, self.kia, self.kir, self.kit = 0.000, 0.000, 0.05, 0
+		self.kpe, self.kpa, self.kpr, self.kpt = 0.02,  0.0,  0.09,   0.00
+		self.kde, self.kda, self.kdr, self.kdt  = 0.00, 0.00,  0.00,  0
+		self.kie, self.kia, self.kir, self.kit = 0.000, 0.000, 0.00, 0
 
 		self.kp = [self.kpe, self.kpa, self.kpr, self.kpt]
 		self.kd = [self.kde, self.kda, self.kdr, self.kdt]
 		self.ki = [self.kie, self.kia, self.kir, self.kit]
 
-		self.init_head = 90.0
+		initial_heading = self.uas.getPOSI()[5]
+
+		self.init_head = initial_heading
+		self.cross_head = self.init_head-90
+		self.down_head = self.cross_head-90
+		self.base_head = self.down_head-90
+		self.final_head = self.base_head-90
+
+		self.cross_sequence = 0
+
+		print("Initial heading ", initial_heading)
 
 		self.kp, self.kd, self.kr = np.array(self.kp), np.array(self.kd), np.array(self.ki)
+
+		self.prev_errors, self.sum_errors, self.references, self.current_states = [0,0,0,0], [0,0,0,0], [0,0,initial_heading,0], [0,0,0,0]
+
+		self.prev_errors, self.references, self.current_states = np.array(self.prev_errors), np.array(self.references), np.array(self.current_states)
+
+		self.throttle, self.elevator, self.aileron, self.rudder = 3, 0, 1, 2
+
+		self.pitch, self.roll, self.yaw = 0, 1, 2
+
+		self.cruise_duration = 60
+
+		self.phases = ['takeoff', 'cross', 'down', 'base', 'final']
+		self.phase = 0
 
 		self.time_period = 0.01
 
@@ -63,6 +86,35 @@ class Xplane_ROS2(Node):
 		#print(self.uav_state.airspeed)
 
 
+	def update_PID_states(self):
+
+		self.current_states[self.pitch], self.current_states[self.roll], self.current_states[self.yaw] = self.uav_state.pitch, self.uav_state.roll, self.uav_state.heading
+
+
+	def PID_Control(self):
+
+		self.update_PID_states()
+
+		self.current_errors = self.references-self.current_states
+
+		error_change = self.current_errors-self.prev_errors
+
+		self.sum_errors += self.current_errors
+
+		self.PIDControls = self.current_errors*self.kp + error_change*self.kd + self.sum_errors*self.ki
+
+		self.prev_errors = self.current_errors
+
+
+	def Knots_to_mps(self, velocity):
+
+		velocity = velocity*(0.51444)
+
+		return velocity
+
+
+
+
 	def Takeoff(self):
 
 
@@ -72,37 +124,115 @@ class Xplane_ROS2(Node):
 
 		self.uas.sendDREF("sim/flightmodel/controls/parkbrake", 0)
 
+		self.PID_Control()
+
 		
 		if self.uav_state.airspeed < self.min_takeoff_speed:
 
 			self.uav_control.throttle = 1.0
 
-			self.uav_control.rudder = self.kpr*(self.init_head - self.uav_state.heading)
+			self.uav_control.rudder = self.PIDControls[self.yaw]
 
 			print("Takeoff : Trying to achieve min takeoff velocity ", self.uav_state.airspeed, self.min_takeoff_speed)
+
+			#print("Yaw ", self.uav_control.rudder, self.references[self.yaw], self.uav_state.heading)
 
 			#self.uav_control_pub.publish(self.uav_control)
 
 		
 		if (self.uav_state.airspeed > self.min_takeoff_speed) and (self.uav_state.altitude < self.cruise_alt_goal):
 
-			self.uav_control.elevator = 0.02*(self.takeoff_pitch-self.uav_state.pitch)
+			self.uav_control.elevator = self.PIDControls[self.pitch]
 
-			self.uav_control.rudder = self.kpr*(self.init_head - self.uav_state.heading)
+			self.uav_control.rudder = self.PIDControls[self.yaw]
 
 			print("Takeoff : Climbinbg ", self.uav_state.altitude, self.uav_control.elevator)
 
 			#self.uav_control_pub.publish(self.uav_control)
 
+		if self.uav_state.altitude > self.cruise_alt_goal:
+
+			self.phase = 1
+
+			self.cruise_start = time.time()
+
+
 
 	def Cruise(self):
+
+		self.uav_control.throttle = 0.6
+
+		self.uav_control.elevator = self.kpe*(self.cruise_pitch-self.uav_state.pitch)
+
+		self.uav_control.rudder = 0.01*(self.references[self.yaw] - self.uav_state.heading)
+
+		self.cruise_time = time.time() - self.cruise_start
+
+		print("Crusing ", self.cruise_time, self.cruise_duration)
+
+		if self.cruise_time > self.cruise_duration:
+
+			self.phase = 2
+
+
+	def CrossWind_Leg(self):
+
+		self.uav_control.throttle = 0.6
+
+		self.uav_control.elevator = self.kpe*(self.cruise_pitch-self.uav_state.pitch)
+
+		self.uav_control.aileron = self.kpa*(self.cross_head-self.uav_state.heading)
+
+		if abs(self.cross_head-self.uav_state.heading) < 4:
+
+			self.cross_sequence += 1
+
+		else:
+
+			self.cross_sequence = 0
+
+		if self.cross_sequence > 30:
+
+			self.phase = 2
+
+		print("Cross wind leg ", self.uav_state.heading, self.cross_head, self.cross_sequence)
+
+	
+	def DownWind_Leg(self):
 
 		pass
 
 
+	def Base_Leg(self):
+
+		pass
+
+
+	def Final_Approach(self):
+
+		pass
+
+
+	def Land(self):
+
+		self.uav_control.throttle = 0.2
+
+		self.uav_control.elevator = self.kpe*(self.land_pitch-self.uav_state.pitch)
+
+		self.uav_control.rudder = 0.01*(self.references[self.yaw] - self.uav_state.heading)
+
+		print("Performing landing ", self.uav_state.local_z)
+
+		if self.uav_state.altitude < 215:
+
+			self.phase = 2
+
+
 	def timer_loop(self):
 
-		if self.uav_state.altitude < self.cruise_alt_goal:
+		if self.phase == 0:
+
+			self.references[self.elevator] = self.takeoff_pitch
 
 			self.Takeoff()
 
@@ -110,9 +240,19 @@ class Xplane_ROS2(Node):
 
 			self.uav_control_pub.publish(self.uav_control)
 
+		elif self.phase == 1:
+
+			self.references[self.pitch] == self.cruise_pitch
+
+			self.CrossWind_Leg()
+
+			self.uav_control_pub.publish(self.uav_control)
+
 		else:
 
-			print("Takeoff is done")
+			print("Crusing done")
+
+			time.sleep(5)
 
 
 def main(args = None):

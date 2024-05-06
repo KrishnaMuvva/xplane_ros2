@@ -37,7 +37,9 @@ class Xplane_ROS2(Node):
 
 		self.cruise_alt_goal, self.min_takeoff_speed = 400, 90
 
-		self.kpe, self.kpa, self.kpr, self.kpt = 0.02,  0.0,  0.09,   0
+		self.takeoff_speed, self.cruise_speed = 250, 250
+
+		self.kpe, self.kpa, self.kpr, self.kpt = 0.02,  0.0,  0.09,   0.00
 		self.kde, self.kda, self.kdr, self.kdt  = 0.00, 0.00,  0.00,  0
 		self.kie, self.kia, self.kir, self.kit = 0.000, 0.000, 0.00, 0
 
@@ -46,6 +48,14 @@ class Xplane_ROS2(Node):
 		self.ki = [self.kie, self.kia, self.kir, self.kit]
 
 		initial_heading = self.uas.getPOSI()[5]
+
+		self.init_head = initial_heading
+		self.cross_head = self.init_head-90
+		self.down_head = self.cross_head-90
+		self.base_head = self.down_head-90
+		self.final_head = self.base_head-90
+
+		self.cross_sequence = 0
 
 		print("Initial heading ", initial_heading)
 
@@ -59,7 +69,9 @@ class Xplane_ROS2(Node):
 
 		self.pitch, self.roll, self.yaw = 0, 1, 2
 
-		self.phases = ['takeoff', 'land']
+		self.cruise_duration = 60
+
+		self.phases = ['takeoff', 'cross', 'down', 'base', 'final']
 		self.phase = 0
 
 		self.time_period = 0.01
@@ -142,10 +154,64 @@ class Xplane_ROS2(Node):
 
 			self.phase = 1
 
+			self.cruise_start = time.time()
+
+
 
 	def Cruise(self):
 
+		self.uav_control.throttle = 0.6
+
+		self.uav_control.elevator = self.kpe*(self.cruise_pitch-self.uav_state.pitch)
+
+		self.uav_control.rudder = 0.01*(self.references[self.yaw] - self.uav_state.heading)
+
+		self.cruise_time = time.time() - self.cruise_start
+
+		print("Crusing ", self.cruise_time, self.cruise_duration)
+
+		if self.cruise_time > self.cruise_duration:
+
+			self.phase = 2
+
+
+	def CrossWind_Leg(self):
+
+		self.uav_control.throttle = 0.6
+
+		self.uav_control.elevator = self.kpe*(self.cruise_pitch-self.uav_state.pitch)
+
+		self.uav_control.aileron = self.kpa*(self.cross_head-self.uav_state.heading)
+
+		if abs(self.cross_head-self.uav_state.heading) < 4:
+
+			self.cross_sequence += 1
+
+		else:
+
+			self.cross_sequence = 0
+
+		if self.cross_sequence > 30:
+
+			self.phase = 2
+
+		print("Cross wind leg ", self.uav_state.heading, self.cross_head, self.cross_sequence)
+
+	
+	def DownWind_Leg(self):
+
 		pass
+
+
+	def Base_Leg(self):
+
+		pass
+
+
+	def Final_Approach(self):
+
+		pass
+
 
 	def Land(self):
 
@@ -176,19 +242,17 @@ class Xplane_ROS2(Node):
 
 		elif self.phase == 1:
 
-			self.references[self.pitch] == self.land_pitch
+			self.references[self.pitch] == self.cruise_pitch
 
-			self.Land()
+			self.CrossWind_Leg()
 
 			self.uav_control_pub.publish(self.uav_control)
 
 		else:
 
-			print("Both done")
+			print("Crusing done")
 
 			time.sleep(5)
-
-			self.uas.sendDREF("sim/flightmodel/controls/parkbrake", 1)
 
 
 def main(args = None):

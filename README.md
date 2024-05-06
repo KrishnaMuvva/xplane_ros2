@@ -67,8 +67,25 @@ echo "source install/setup.bash" >> ~/.bashrc
 
 ## Usage of Package
 
+Launch Package
+
+``` shell
+
+ros2 launch xplaneros2_main xplane_ros2_launch.py
+
+```
+
 ### Autonomous Takeoff
+
+Autonomous Takeoff and Cruise Script
+
+``` shell
+
+python3 takeoff_cruise.py
+
+```
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/GQZEaKGTUPU/0.jpg)](https://www.youtube.com/watch?v=GQZEaKGTUPU)
 
 ### Autonomous Traffic Patterns
 
-### Autonomous Airport (KLNK) to Airport (KOMA) Navigation

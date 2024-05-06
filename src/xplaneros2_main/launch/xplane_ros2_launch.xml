@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="xplaneros2_main" exec="uav_control_node" output = "screen"/>
+</launch>

@@ -40,6 +40,8 @@ class Xplane_State_Node(Node):
 		self.drefs.append("sim/flightmodel/position/local_ay")                 # 12
 		self.drefs.append("sim/flightmodel/position/local_az")                 # 13
 
+		self.state_msg_counter, self.state_msg_frame = 0, 'UAV State'
+
 		self.state_publisher = self.create_publisher(UAVState, '/xplane/uav/state', 1)
 
 		time_period = 0.01
@@ -52,6 +54,10 @@ class Xplane_State_Node(Node):
 		self.pose = self.uas.getPOSI()
 
 		self.aug_positions = self.uas.getDREFs(self.drefs)
+
+		self.uav_state.header.frame_id = self.state_msg_frame
+
+		#self.uav_state.header.stamp = Node.get_clock().now().to_msg()
 
 		self.uav_state.lattitude, self.uav_state.longitude, self.uav_state.altitude = self.pose[0], self.pose[1], self.pose[2]
 
