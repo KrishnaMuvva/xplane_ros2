@@ -6,8 +6,12 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_state__builder.hpp"
   "rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_state__struct.hpp"
   "rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_state__traits.hpp"
+  "rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_type__builder.hpp"
+  "rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_type__struct.hpp"
+  "rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_type__traits.hpp"
   "rosidl_generator_cpp/xplane_interfaces/msg/uav_control.hpp"
   "rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp"
+  "rosidl_generator_cpp/xplane_interfaces/msg/uav_type.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

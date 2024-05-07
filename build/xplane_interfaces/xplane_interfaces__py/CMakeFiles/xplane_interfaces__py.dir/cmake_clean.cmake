@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/xplane_interfaces/msg/_uav_control_s.c"
   "../rosidl_generator_py/xplane_interfaces/msg/_uav_state.py"
   "../rosidl_generator_py/xplane_interfaces/msg/_uav_state_s.c"
+  "../rosidl_generator_py/xplane_interfaces/msg/_uav_type.py"
+  "../rosidl_generator_py/xplane_interfaces/msg/_uav_type_s.c"
   "CMakeFiles/xplane_interfaces__py"
 )
 

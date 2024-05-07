@@ -2,3 +2,5 @@ msg/UAVControl.idl
 msg/UAVControl.msg
 msg/UAVState.idl
 msg/UAVState.msg
+msg/UAVType.idl
+msg/UAVType.msg

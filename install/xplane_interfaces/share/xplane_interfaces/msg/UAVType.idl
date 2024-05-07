@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from xplane_interfaces/msg/UAVType.msg
+// generated code does not contain a copyright notice
+
+
+module xplane_interfaces {
+  module msg {
+    struct UAVType {
+      string id;
+
+      string name;
+    };
+  };
+};

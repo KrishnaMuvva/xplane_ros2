@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_py/xplane_interfaces/msg/_uav_control_s.c" "CMakeFiles/xplane_interfaces__rosidl_generator_py.dir/rosidl_generator_py/xplane_interfaces/msg/_uav_control_s.c.o" "gcc" "CMakeFiles/xplane_interfaces__rosidl_generator_py.dir/rosidl_generator_py/xplane_interfaces/msg/_uav_control_s.c.o.d"
   "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_py/xplane_interfaces/msg/_uav_state_s.c" "CMakeFiles/xplane_interfaces__rosidl_generator_py.dir/rosidl_generator_py/xplane_interfaces/msg/_uav_state_s.c.o" "gcc" "CMakeFiles/xplane_interfaces__rosidl_generator_py.dir/rosidl_generator_py/xplane_interfaces/msg/_uav_state_s.c.o.d"
+  "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_py/xplane_interfaces/msg/_uav_type_s.c" "CMakeFiles/xplane_interfaces__rosidl_generator_py.dir/rosidl_generator_py/xplane_interfaces/msg/_uav_type_s.c.o" "gcc" "CMakeFiles/xplane_interfaces__rosidl_generator_py.dir/rosidl_generator_py/xplane_interfaces/msg/_uav_type_s.c.o.d"
   )
 
 # Targets to which this target links.

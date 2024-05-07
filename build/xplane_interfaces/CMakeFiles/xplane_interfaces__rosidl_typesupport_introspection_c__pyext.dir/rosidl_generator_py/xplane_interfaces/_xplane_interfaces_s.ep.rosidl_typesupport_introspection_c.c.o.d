@@ -209,6 +209,9 @@ CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosi
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
  /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/msg/detail/uav_state__functions.h \
+ /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/msg/detail/uav_type__type_support.h \
+ /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/msg/detail/uav_type__struct.h \
+ /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/msg/detail/uav_type__functions.h \
  /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__type_support.h \
  /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__struct.h \
  /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.h

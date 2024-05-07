@@ -19,6 +19,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_py/xplane_interfaces/msg/_uav_control_s.c" "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_py/xplane_interfaces/msg/_uav_state.py" "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_py/xplane_interfaces/msg/_uav_state_s.c" "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_py/xplane_interfaces/msg/_uav_type.py" "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_py/xplane_interfaces/msg/_uav_type_s.c" "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

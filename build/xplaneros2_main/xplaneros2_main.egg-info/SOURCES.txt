@@ -14,6 +14,7 @@ test/test_flake8.py
 test/test_pep257.py
 xplaneros2_main/__init__.py
 xplaneros2_main/data_collection.py
+xplaneros2_main/environment_state_node.py
 xplaneros2_main/takeoff_cruise.py
 xplaneros2_main/test.py
 xplaneros2_main/uav_control_node.py

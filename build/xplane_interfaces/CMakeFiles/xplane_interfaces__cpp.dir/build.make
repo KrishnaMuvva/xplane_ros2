@@ -70,6 +70,10 @@ CMakeFiles/xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/ua
 CMakeFiles/xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_state__builder.hpp
 CMakeFiles/xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_state__struct.hpp
 CMakeFiles/xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_state__traits.hpp
+CMakeFiles/xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/uav_type.hpp
+CMakeFiles/xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_type__builder.hpp
+CMakeFiles/xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_type__struct.hpp
+CMakeFiles/xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_type__traits.hpp
 CMakeFiles/xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/uav_control.hpp
 CMakeFiles/xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_control__builder.hpp
 CMakeFiles/xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_control__struct.hpp
@@ -91,6 +95,7 @@ rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp: /opt/ros/humble/share/
 rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp: rosidl_adapter/xplane_interfaces/msg/UAVState.idl
+rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp: rosidl_adapter/xplane_interfaces/msg/UAVType.idl
 rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp: rosidl_adapter/xplane_interfaces/msg/UAVControl.idl
 rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
@@ -136,6 +141,18 @@ rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_state__struct.hpp: rosidl_
 rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_state__traits.hpp: rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_state__traits.hpp
 
+rosidl_generator_cpp/xplane_interfaces/msg/uav_type.hpp: rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/xplane_interfaces/msg/uav_type.hpp
+
+rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_type__builder.hpp: rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_type__builder.hpp
+
+rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_type__struct.hpp: rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_type__struct.hpp
+
+rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_type__traits.hpp: rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_type__traits.hpp
+
 rosidl_generator_cpp/xplane_interfaces/msg/uav_control.hpp: rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/xplane_interfaces/msg/uav_control.hpp
 
@@ -155,8 +172,12 @@ xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_co
 xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_state__builder.hpp
 xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_state__struct.hpp
 xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_state__traits.hpp
+xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_type__builder.hpp
+xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_type__struct.hpp
+xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_type__traits.hpp
 xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/uav_control.hpp
 xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp
+xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/uav_type.hpp
 xplane_interfaces__cpp: CMakeFiles/xplane_interfaces__cpp.dir/build.make
 .PHONY : xplane_interfaces__cpp
 

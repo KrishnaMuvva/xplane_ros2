@@ -18,7 +18,11 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_state__builder.hpp" "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp"
   "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_state__struct.hpp" "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp"
   "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_state__traits.hpp" "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp"
+  "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_type__builder.hpp" "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp"
+  "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_type__struct.hpp" "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp"
+  "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_type__traits.hpp" "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp"
   "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_cpp/xplane_interfaces/msg/uav_control.hpp" "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp"
+  "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_cpp/xplane_interfaces/msg/uav_type.hpp" "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp"
   )
 
 

@@ -78,6 +78,7 @@ rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_state__rosid
 rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_state__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em
 rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_state__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
 rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_state__rosidl_typesupport_introspection_c.h: rosidl_adapter/xplane_interfaces/msg/UAVState.idl
+rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_state__rosidl_typesupport_introspection_c.h: rosidl_adapter/xplane_interfaces/msg/UAVType.idl
 rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_state__rosidl_typesupport_introspection_c.h: rosidl_adapter/xplane_interfaces/msg/UAVControl.idl
 rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_state__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_state__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
@@ -114,11 +115,17 @@ rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_state__rosid
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_typesupport_introspection_c__arguments.json
 
+rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_state__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__rosidl_typesupport_introspection_c.h
+
 rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_control__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_state__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_control__rosidl_typesupport_introspection_c.h
 
 rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_state__type_support.c: rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_state__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_state__type_support.c
+
+rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__type_support.c: rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_state__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__type_support.c
 
 rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_control__type_support.c: rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_state__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_control__type_support.c
@@ -137,10 +144,24 @@ CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_type
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_state__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_state__type_support.c -o CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_state__type_support.c.s
 
+CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__type_support.c.o: CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__type_support.c.o: rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__type_support.c
+CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__type_support.c.o: CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__type_support.c.o -MF CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__type_support.c.o.d -o CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__type_support.c.o -c /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__type_support.c
+
+CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__type_support.c > CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__type_support.c.i
+
+CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__type_support.c -o CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__type_support.c.s
+
 CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_control__type_support.c.o: CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_control__type_support.c.o: rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_control__type_support.c
 CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_control__type_support.c.o: CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_control__type_support.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_control__type_support.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_control__type_support.c.o -MF CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_control__type_support.c.o.d -o CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_control__type_support.c.o -c /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_control__type_support.c
 
 CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_control__type_support.c.i: cmake_force
@@ -154,12 +175,14 @@ CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_type
 # Object files for target xplane_interfaces__rosidl_typesupport_introspection_c
 xplane_interfaces__rosidl_typesupport_introspection_c_OBJECTS = \
 "CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_state__type_support.c.o" \
+"CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__type_support.c.o" \
 "CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_control__type_support.c.o"
 
 # External object files for target xplane_interfaces__rosidl_typesupport_introspection_c
 xplane_interfaces__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 
 libxplane_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_state__type_support.c.o
+libxplane_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__type_support.c.o
 libxplane_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_control__type_support.c.o
 libxplane_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/build.make
 libxplane_interfaces__rosidl_typesupport_introspection_c.so: libxplane_interfaces__rosidl_generator_c.so
@@ -171,7 +194,7 @@ libxplane_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib
 libxplane_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libxplane_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librcutils.so
 libxplane_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libxplane_interfaces__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libxplane_interfaces__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -186,6 +209,8 @@ CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/depend: ros
 CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_control__type_support.c
 CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_state__rosidl_typesupport_introspection_c.h
 CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_state__type_support.c
+CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__rosidl_typesupport_introspection_c.h
+CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__type_support.c
 	cd /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces /home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/depend
 

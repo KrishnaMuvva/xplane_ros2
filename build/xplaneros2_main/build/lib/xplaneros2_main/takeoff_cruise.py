@@ -192,7 +192,7 @@ class Xplane_ROS2(Node):
 
 			#print("Rudder control ", self.uav_control.rudder, self.uav_state.heading, self.init_head)
 
-			self.uav_control_pub.publish(self.uav_control)
+			#self.uav_control_pub.publish(self.uav_control)
 
 		elif self.phase == 1:
 
@@ -200,7 +200,7 @@ class Xplane_ROS2(Node):
 
 			self.Cruise()
 
-			self.uav_control_pub.publish(self.uav_control)
+			#self.uav_control_pub.publish(self.uav_control)
 
 		else:
 

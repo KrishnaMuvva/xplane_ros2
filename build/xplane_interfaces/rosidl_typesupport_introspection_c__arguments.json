@@ -4,6 +4,7 @@
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource",
   "idl_tuples": [
     "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces:msg/UAVState.idl",
+    "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces:msg/UAVType.idl",
     "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces:msg/UAVControl.idl"
   ],
   "ros_interface_dependencies": [
@@ -50,6 +51,7 @@
     "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em",
     "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em",
     "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces/msg/UAVState.idl",
+    "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces/msg/UAVType.idl",
     "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces/msg/UAVControl.idl",
     "/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
     "/opt/ros/humble/share/builtin_interfaces/msg/Time.idl",

@@ -8,7 +8,7 @@ import xpc
 import rclpy
 from rclpy.node import Node
 
-from xplane_interfaces.msg import UAVState
+from xplane_interfaces.msg import UAVState, UAVType
 
 class Xplane_State_Node(Node):
 
@@ -44,9 +44,30 @@ class Xplane_State_Node(Node):
 
 		self.state_publisher = self.create_publisher(UAVState, '/xplane/uav/state', 1)
 
+		self.UAVType_Datarefs()
+
 		time_period = 0.01
 
 		self.timer = self.create_timer(time_period, self.timer_callback)
+
+
+	def UAVType_Datarefs(self):
+
+		self.uav_id, self.uav_name = 14, 15
+
+		self.drefs.append("sim/aircraft/view/acf_ICAO")
+		self.drefs.append("sim/aircraft/view/acf_descrip")
+
+		self.uav_type = UAVType()
+
+		self.type_publisher = self.create_publisher(UAVType, '/xplane/uav/type', 1)
+
+
+	def UAVType_Update(self):
+
+		self.uav_type_id, self.uav_type_name = self.aug_positions[self.uav_id][0], self.aug_positions[self.uav_name][0]
+
+		self.type_publisher.publish(self.uav_type)
 
 	
 	def timer_callback(self):

@@ -25,6 +25,7 @@ endif()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/UAVState.msg"
+  "msg/UAVType.msg"
   "msg/UAVControl.msg"
   DEPENDENCIES builtin_interfaces std_msgs
 )
