@@ -12,7 +12,7 @@ class Environment(Node):
 
 	def __init__(self):
 
-		super().__init__('state_node')
+		super().__init__('envrironment_node')
 
 		self.uas = xpc.XPlaneConnect()
 

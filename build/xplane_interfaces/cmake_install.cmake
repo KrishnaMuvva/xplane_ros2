@@ -360,6 +360,14 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xplane_interfaces/msg" TYPE FILE FILES "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces/msg/UAVGlobalState.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xplane_interfaces/msg" TYPE FILE FILES "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces/msg/UAVLocalState.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xplane_interfaces/msg" TYPE FILE FILES "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces/msg/UAVType.idl")
 endif()
 
@@ -368,7 +376,19 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xplane_interfaces/msg" TYPE FILE FILES "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces/msg/UAVAutoPilot.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xplane_interfaces/msg" TYPE FILE FILES "/home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces/msg/UAVState.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xplane_interfaces/msg" TYPE FILE FILES "/home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces/msg/UAVGlobalState.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xplane_interfaces/msg" TYPE FILE FILES "/home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces/msg/UAVLocalState.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -377,6 +397,10 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xplane_interfaces/msg" TYPE FILE FILES "/home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces/msg/UAVControl.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xplane_interfaces/msg" TYPE FILE FILES "/home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces/msg/UAVAutoPilot.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

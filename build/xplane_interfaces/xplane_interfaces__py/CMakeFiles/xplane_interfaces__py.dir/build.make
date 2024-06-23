@@ -70,12 +70,18 @@ xplane_interfaces__py/CMakeFiles/xplane_interfaces__py: rosidl_generator_py/xpla
 xplane_interfaces__py/CMakeFiles/xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 xplane_interfaces__py/CMakeFiles/xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_c.c
 xplane_interfaces__py/CMakeFiles/xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/msg/_uav_state.py
+xplane_interfaces__py/CMakeFiles/xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/msg/_uav_global_state.py
+xplane_interfaces__py/CMakeFiles/xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/msg/_uav_local_state.py
 xplane_interfaces__py/CMakeFiles/xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/msg/_uav_type.py
 xplane_interfaces__py/CMakeFiles/xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/msg/_uav_control.py
+xplane_interfaces__py/CMakeFiles/xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/msg/_uav_auto_pilot.py
 xplane_interfaces__py/CMakeFiles/xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/msg/__init__.py
 xplane_interfaces__py/CMakeFiles/xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/msg/_uav_state_s.c
+xplane_interfaces__py/CMakeFiles/xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/msg/_uav_global_state_s.c
+xplane_interfaces__py/CMakeFiles/xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/msg/_uav_local_state_s.c
 xplane_interfaces__py/CMakeFiles/xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/msg/_uav_type_s.c
 xplane_interfaces__py/CMakeFiles/xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/msg/_uav_control_s.c
+xplane_interfaces__py/CMakeFiles/xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/msg/_uav_auto_pilot_s.c
 
 rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -91,8 +97,11 @@ rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport
 rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/xplane_interfaces/msg/UAVState.idl
+rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/xplane_interfaces/msg/UAVGlobalState.idl
+rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/xplane_interfaces/msg/UAVLocalState.idl
 rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/xplane_interfaces/msg/UAVType.idl
 rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/xplane_interfaces/msg/UAVControl.idl
+rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/xplane_interfaces/msg/UAVAutoPilot.idl
 rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/Bool.idl
@@ -137,11 +146,20 @@ rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport
 rosidl_generator_py/xplane_interfaces/msg/_uav_state.py: rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/xplane_interfaces/msg/_uav_state.py
 
+rosidl_generator_py/xplane_interfaces/msg/_uav_global_state.py: rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/xplane_interfaces/msg/_uav_global_state.py
+
+rosidl_generator_py/xplane_interfaces/msg/_uav_local_state.py: rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/xplane_interfaces/msg/_uav_local_state.py
+
 rosidl_generator_py/xplane_interfaces/msg/_uav_type.py: rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/xplane_interfaces/msg/_uav_type.py
 
 rosidl_generator_py/xplane_interfaces/msg/_uav_control.py: rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/xplane_interfaces/msg/_uav_control.py
+
+rosidl_generator_py/xplane_interfaces/msg/_uav_auto_pilot.py: rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/xplane_interfaces/msg/_uav_auto_pilot.py
 
 rosidl_generator_py/xplane_interfaces/msg/__init__.py: rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/xplane_interfaces/msg/__init__.py
@@ -149,18 +167,33 @@ rosidl_generator_py/xplane_interfaces/msg/__init__.py: rosidl_generator_py/xplan
 rosidl_generator_py/xplane_interfaces/msg/_uav_state_s.c: rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/xplane_interfaces/msg/_uav_state_s.c
 
+rosidl_generator_py/xplane_interfaces/msg/_uav_global_state_s.c: rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/xplane_interfaces/msg/_uav_global_state_s.c
+
+rosidl_generator_py/xplane_interfaces/msg/_uav_local_state_s.c: rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/xplane_interfaces/msg/_uav_local_state_s.c
+
 rosidl_generator_py/xplane_interfaces/msg/_uav_type_s.c: rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/xplane_interfaces/msg/_uav_type_s.c
 
 rosidl_generator_py/xplane_interfaces/msg/_uav_control_s.c: rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/xplane_interfaces/msg/_uav_control_s.c
 
+rosidl_generator_py/xplane_interfaces/msg/_uav_auto_pilot_s.c: rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/xplane_interfaces/msg/_uav_auto_pilot_s.c
+
 xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_c.c
 xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/msg/__init__.py
+xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/msg/_uav_auto_pilot.py
+xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/msg/_uav_auto_pilot_s.c
 xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/msg/_uav_control.py
 xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/msg/_uav_control_s.c
+xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/msg/_uav_global_state.py
+xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/msg/_uav_global_state_s.c
+xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/msg/_uav_local_state.py
+xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/msg/_uav_local_state_s.c
 xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/msg/_uav_state.py
 xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/msg/_uav_state_s.c
 xplane_interfaces__py: rosidl_generator_py/xplane_interfaces/msg/_uav_type.py

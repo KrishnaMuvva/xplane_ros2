@@ -8,7 +8,7 @@ import xpc
 import rclpy
 from rclpy.node import Node
 
-from xplane_interfaces.msg import UAVControl
+from xplane_interfaces.msg import UAVControl, UAVAutoPilot
 
 class Xplane_Control_Node(Node):
 

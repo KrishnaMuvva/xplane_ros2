@@ -83,8 +83,11 @@ rosidl_generator_c/xplane_interfaces/msg/uav_state.h: /opt/ros/humble/share/rosi
 rosidl_generator_c/xplane_interfaces/msg/uav_state.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__type_support.h.em
 rosidl_generator_c/xplane_interfaces/msg/uav_state.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/xplane_interfaces/msg/uav_state.h: rosidl_adapter/xplane_interfaces/msg/UAVState.idl
+rosidl_generator_c/xplane_interfaces/msg/uav_state.h: rosidl_adapter/xplane_interfaces/msg/UAVGlobalState.idl
+rosidl_generator_c/xplane_interfaces/msg/uav_state.h: rosidl_adapter/xplane_interfaces/msg/UAVLocalState.idl
 rosidl_generator_c/xplane_interfaces/msg/uav_state.h: rosidl_adapter/xplane_interfaces/msg/UAVType.idl
 rosidl_generator_c/xplane_interfaces/msg/uav_state.h: rosidl_adapter/xplane_interfaces/msg/UAVControl.idl
+rosidl_generator_c/xplane_interfaces/msg/uav_state.h: rosidl_adapter/xplane_interfaces/msg/UAVAutoPilot.idl
 rosidl_generator_c/xplane_interfaces/msg/uav_state.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_c/xplane_interfaces/msg/uav_state.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 rosidl_generator_c/xplane_interfaces/msg/uav_state.h: /opt/ros/humble/share/std_msgs/msg/Bool.idl
@@ -129,6 +132,30 @@ rosidl_generator_c/xplane_interfaces/msg/detail/uav_state__struct.h: rosidl_gene
 rosidl_generator_c/xplane_interfaces/msg/detail/uav_state__type_support.h: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/msg/detail/uav_state__type_support.h
 
+rosidl_generator_c/xplane_interfaces/msg/uav_global_state.h: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/msg/uav_global_state.h
+
+rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__functions.h: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__functions.h
+
+rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__struct.h: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__struct.h
+
+rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__type_support.h: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__type_support.h
+
+rosidl_generator_c/xplane_interfaces/msg/uav_local_state.h: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/msg/uav_local_state.h
+
+rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__functions.h: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__functions.h
+
+rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__struct.h: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__struct.h
+
+rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__type_support.h: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__type_support.h
+
 rosidl_generator_c/xplane_interfaces/msg/uav_type.h: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/msg/uav_type.h
 
@@ -153,14 +180,35 @@ rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__struct.h: rosidl_ge
 rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__type_support.h: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__type_support.h
 
+rosidl_generator_c/xplane_interfaces/msg/uav_auto_pilot.h: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/msg/uav_auto_pilot.h
+
+rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.h: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.h
+
+rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__struct.h: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__struct.h
+
+rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__type_support.h: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__type_support.h
+
 rosidl_generator_c/xplane_interfaces/msg/detail/uav_state__functions.c: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/msg/detail/uav_state__functions.c
+
+rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__functions.c: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__functions.c
+
+rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__functions.c: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__functions.c
 
 rosidl_generator_c/xplane_interfaces/msg/detail/uav_type__functions.c: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/msg/detail/uav_type__functions.c
 
 rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.c: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.c
+
+rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c
 
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_state__functions.c.o: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_state__functions.c.o: rosidl_generator_c/xplane_interfaces/msg/detail/uav_state__functions.c
@@ -176,10 +224,38 @@ CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_i
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_state__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/msg/detail/uav_state__functions.c -o CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_state__functions.c.s
 
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__functions.c.o: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__functions.c.o: rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__functions.c
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__functions.c.o: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__functions.c.o -MF CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__functions.c.o.d -o CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__functions.c.o -c /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__functions.c
+
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__functions.c > CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__functions.c.i
+
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__functions.c -o CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__functions.c.s
+
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__functions.c.o: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__functions.c.o: rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__functions.c
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__functions.c.o: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__functions.c.o -MF CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__functions.c.o.d -o CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__functions.c.o -c /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__functions.c
+
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__functions.c > CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__functions.c.i
+
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__functions.c -o CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__functions.c.s
+
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_type__functions.c.o: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_type__functions.c.o: rosidl_generator_c/xplane_interfaces/msg/detail/uav_type__functions.c
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_type__functions.c.o: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_type__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_type__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_type__functions.c.o -MF CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_type__functions.c.o.d -o CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_type__functions.c.o -c /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/msg/detail/uav_type__functions.c
 
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_type__functions.c.i: cmake_force
@@ -193,7 +269,7 @@ CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_i
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.c.o: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.c.o: rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.c
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.c.o: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.c.o -MF CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.c.o.d -o CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.c.o -c /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.c
 
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.c.i: cmake_force
@@ -204,25 +280,45 @@ CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_i
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.c -o CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.c.s
 
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c.o: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c.o: rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c.o: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c.o -MF CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c.o.d -o CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c.o -c /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c
+
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c > CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c.i
+
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c -o CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c.s
+
 # Object files for target xplane_interfaces__rosidl_generator_c
 xplane_interfaces__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_state__functions.c.o" \
+"CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__functions.c.o" \
+"CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__functions.c.o" \
 "CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_type__functions.c.o" \
-"CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.c.o"
+"CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.c.o" \
+"CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c.o"
 
 # External object files for target xplane_interfaces__rosidl_generator_c
 xplane_interfaces__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 libxplane_interfaces__rosidl_generator_c.so: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_state__functions.c.o
+libxplane_interfaces__rosidl_generator_c.so: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__functions.c.o
+libxplane_interfaces__rosidl_generator_c.so: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__functions.c.o
 libxplane_interfaces__rosidl_generator_c.so: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_type__functions.c.o
 libxplane_interfaces__rosidl_generator_c.so: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.c.o
+libxplane_interfaces__rosidl_generator_c.so: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c.o
 libxplane_interfaces__rosidl_generator_c.so: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/build.make
 libxplane_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 libxplane_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 libxplane_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libxplane_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libxplane_interfaces__rosidl_generator_c.so: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libxplane_interfaces__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C shared library libxplane_interfaces__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -233,10 +329,22 @@ CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/clean
 
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.h
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__struct.h
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__type_support.h
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.c
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.h
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__struct.h
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__type_support.h
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__functions.c
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__functions.h
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__struct.h
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__type_support.h
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__functions.c
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__functions.h
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__struct.h
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__type_support.h
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/detail/uav_state__functions.c
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/detail/uav_state__functions.h
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/detail/uav_state__struct.h
@@ -245,7 +353,10 @@ CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/detail/uav_type__functions.h
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/detail/uav_type__struct.h
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/detail/uav_type__type_support.h
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/uav_auto_pilot.h
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/uav_control.h
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/uav_global_state.h
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/uav_local_state.h
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/uav_type.h
 	cd /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces /home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)

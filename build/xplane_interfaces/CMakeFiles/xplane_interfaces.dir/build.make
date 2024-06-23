@@ -67,8 +67,11 @@ include CMakeFiles/xplane_interfaces.dir/compiler_depend.make
 include CMakeFiles/xplane_interfaces.dir/progress.make
 
 CMakeFiles/xplane_interfaces: /home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces/msg/UAVState.msg
+CMakeFiles/xplane_interfaces: /home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces/msg/UAVGlobalState.msg
+CMakeFiles/xplane_interfaces: /home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces/msg/UAVLocalState.msg
 CMakeFiles/xplane_interfaces: /home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces/msg/UAVType.msg
 CMakeFiles/xplane_interfaces: /home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces/msg/UAVControl.msg
+CMakeFiles/xplane_interfaces: /home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces/msg/UAVAutoPilot.msg
 CMakeFiles/xplane_interfaces: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 CMakeFiles/xplane_interfaces: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 CMakeFiles/xplane_interfaces: /opt/ros/humble/share/std_msgs/msg/Bool.idl

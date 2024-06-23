@@ -1,0 +1,13 @@
+float64 local_x
+float64 local_y
+float64 local_z
+float64 local_vx
+float64 local_vy
+float64 local_vz
+float64 local_ax
+float64 local_ay
+float64 local_az
+float64 roll
+float64 pitch
+float64 yaw
+float64 airspeed

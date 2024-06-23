@@ -8,7 +8,7 @@ import xpc
 import rclpy
 from rclpy.node import Node
 
-from xplane_interfaces.msg import UAVState, UAVType
+from xplane_interfaces.msg import UAVGlobalState, UAVLocalState, UAVType
 
 class Xplane_State_Node(Node):
 
@@ -18,33 +18,21 @@ class Xplane_State_Node(Node):
 
 		self.uas = xpc.XPlaneConnect()
 
-		self.uav_state = UAVState()
+		# self.drefs.append("sim/flightmodel/position/groundspeed")              # 0
+		# self.drefs.append("sim/flightmodel/position/indicated_airspeed")       # 1
+		# self.drefs.append("sim/flightmodel/position/vh_ind")                   # 2
+		# self.drefs.append("sim/flightmodel/controls/parkbrake")                # 3
+		# self.drefs.append("sim/weather/wind_speed_kt")                         # 4
 
-		self.drefs = []
+		
 
-		self.drefs.append("sim/flightmodel/position/groundspeed")              # 0
-		self.drefs.append("sim/flightmodel/position/indicated_airspeed")       # 1
-		self.drefs.append("sim/flightmodel/position/vh_ind")                   # 2
-		self.drefs.append("sim/flightmodel/controls/parkbrake")                # 3
-		self.drefs.append("sim/weather/wind_speed_kt")                         # 4
-
-		self.drefs.append("sim/flightmodel/position/local_x")                  # 5
-		self.drefs.append("sim/flightmodel/position/local_y")                  # 6
-		self.drefs.append("sim/flightmodel/position/local_z")                  # 7
-
-		self.drefs.append("sim/flightmodel/position/local_vx")                 # 8
-		self.drefs.append("sim/flightmodel/position/local_vy")                 # 9
-		self.drefs.append("sim/flightmodel/position/local_vz")                 # 10
-
-		self.drefs.append("sim/flightmodel/position/local_ax")                 # 11
-		self.drefs.append("sim/flightmodel/position/local_ay")                 # 12
-		self.drefs.append("sim/flightmodel/position/local_az")                 # 13
-
-		self.state_msg_counter, self.state_msg_frame = 0, 'UAV State'
-
-		self.state_publisher = self.create_publisher(UAVState, '/xplane/uav/state', 1)
+		#self.state_msg_counter, self.state_msg_frame = 0, 'UAV State'
 
 		self.UAVType_Datarefs()
+
+		self.UAVGlobalState_Datarefs()
+
+		self.UAVLocalState_Datarefs()
 
 		time_period = 0.01
 
@@ -53,10 +41,12 @@ class Xplane_State_Node(Node):
 
 	def UAVType_Datarefs(self):
 
-		self.uav_id, self.uav_name = 14, 15
+		self.type_drefs = []
 
-		self.drefs.append("sim/aircraft/view/acf_ICAO")
-		self.drefs.append("sim/aircraft/view/acf_descrip")
+		self.uav_id, self.uav_name = 0, 1
+
+		self.type_drefs.append("sim/aircraft/view/acf_ICAO")
+		self.type_drefs.append("sim/aircraft/view/acf_descrip")
 
 		self.uav_type = UAVType()
 
@@ -65,38 +55,116 @@ class Xplane_State_Node(Node):
 
 	def UAVType_Update(self):
 
-		self.uav_type_id, self.uav_type_name = self.aug_positions[self.uav_id][0], self.aug_positions[self.uav_name][0]
+		self.type_data = self.uas.getDREFs(self.type_drefs)
+
+		id_tuple, name_tuple = self.type_data[self.uav_id], self.type_data[self.uav_name]
+
+		self.uav_type.id, self.uav_type.name =  ''.join(chr(int(val)) for val in id_tuple), ''.join(chr(int(val)) for val in name_tuple)
 
 		self.type_publisher.publish(self.uav_type)
+
+
+	def UAVGlobalState_Datarefs(self):
+
+		self.global_state_drefs = []
+
+		self.altitude_agl = 0
+		self.global_state_drefs.append("sim/flightmodel/position/y_agl") 
+
+		self.true_theta, self.true_phi, self.true_psi = 1, 2, 3
+		self.global_state_drefs.append("sim/flightmodel/position/true_theta")
+		self.global_state_drefs.append("sim/flightmodel/position/true_phi")
+		self.global_state_drefs.append("sim/flightmodel/position/true_psi")
+
+		self.ground_speed = 4
+		self.global_state_drefs.append("sim/flightmodel/position/groundspeed")
+
+
+		self.uav_global_state = UAVGlobalState()
+
+		self.global_state_publisher = self.create_publisher(UAVGlobalState, '/xplane/uav/global_state', 1)
+
+
+	def UAVGlobalState_Update(self):
+
+		self.global_data = self.uas.getDREFs(self.global_state_drefs)
+
+		self.uav_global_state.lattitude, self.uav_global_state.longitude, self.uav_global_state.altitude_msl, self.uav_global_state.altitude_agl = self.pose[0], self.pose[1], self.pose[2], self.global_data[self.altitude_agl][0]
+
+		self.uav_global_state.global_roll, self.uav_global_state.global_pitch, self.uav_global_state.global_yaw = self.global_data[self.true_theta][0], self.global_data[self.true_phi][0], self.global_data[self.true_psi][0]
+
+		self.uav_global_state.groundspeed = self.global_data[self.ground_speed][0]
+
+		self.global_state_publisher.publish(self.uav_global_state)
+
+
+	def UAVLocalState_Datarefs(self):
+
+		self.local_state_drefs = []
+
+		self.local_x, self.local_y, self.local_z = 0, 1, 2
+
+		self.local_state_drefs.append("sim/flightmodel/position/local_x")
+		self.local_state_drefs.append("sim/flightmodel/position/local_y")
+		self.local_state_drefs.append("sim/flightmodel/position/local_z")
+
+		self.local_vx, self.local_vy, self.local_vz = 3, 4, 5
+
+		self.local_state_drefs.append("sim/flightmodel/position/local_vx")
+		self.local_state_drefs.append("sim/flightmodel/position/local_vy")
+		self.local_state_drefs.append("sim/flightmodel/position/local_vz")
+
+		self.local_ax, self.local_ay, self.local_az = 6, 7, 8
+
+		self.local_state_drefs.append("sim/flightmodel/position/local_ax")
+		self.local_state_drefs.append("sim/flightmodel/position/local_ay")
+		self.local_state_drefs.append("sim/flightmodel/position/local_az")
+
+		self.theta, self.phi, self.psi = 9, 10, 11
+
+		self.local_state_drefs.append("sim/flightmodel/position/theta")
+		self.local_state_drefs.append("sim/flightmodel/position/phi")
+		self.local_state_drefs.append("sim/flightmodel/position/psi")  
+
+		self.airspeed = 12
+		self.local_state_drefs.append("sim/flightmodel/position/indicated_airspeed") 
+
+		self.uav_local_state = UAVLocalState()
+
+		self.local_state_publisher = self.create_publisher(UAVLocalState, '/xplane/uav/local_state', 1)
+
+
+	def UAVLocalState_Update(self):
+
+		self.local_data = self.uas.getDREFs(self.local_state_drefs)
+
+		self.uav_local_state.local_x, self.uav_local_state.local_y, self.uav_local_state.local_z = self.local_data[self.local_x][0], self.local_data[self.local_y][0], self.local_data[self.local_z][0]
+
+		self.uav_local_state.local_vx, self.uav_local_state.local_vy, self.uav_local_state.local_vz = self.local_data[self.local_vx][0], self.local_data[self.local_vy][0], self.local_data[self.local_vz][0]
+
+		self.uav_local_state.local_ax, self.uav_local_state.local_ay, self.uav_local_state.local_az = self.local_data[self.local_ax][0], self.local_data[self.local_ay][0], self.local_data[self.local_az][0]
+
+		self.uav_local_state.roll, self.uav_local_state.pitch, self.uav_local_state.yaw = self.local_data[self.phi][0], self.local_data[self.theta][0], self.local_data[self.psi][0]
+
+		self.uav_local_state.airspeed = self.local_data[self.airspeed][0]
+
+		print(self.uav_local_state.airspeed)
+
+		self.local_state_publisher.publish(self.uav_local_state)
 
 	
 	def timer_callback(self):
 
 		self.pose = self.uas.getPOSI()
 
-		self.aug_positions = self.uas.getDREFs(self.drefs)
+		#self.uav_state.header.frame_id = self.state_msg_frame
 
-		self.uav_state.header.frame_id = self.state_msg_frame
+		self.UAVType_Update()
 
-		#self.uav_state.header.stamp = Node.get_clock().now().to_msg()
+		self.UAVGlobalState_Update()
 
-		self.uav_state.lattitude, self.uav_state.longitude, self.uav_state.altitude = self.pose[0], self.pose[1], self.pose[2]
-
-		self.uav_state.roll, self.uav_state.pitch, self.uav_state.heading = self.pose[4], self.pose[3], self.pose[5]
-
-		self.uav_state.airspeed = self.aug_positions[1][0]
-
-		self.uav_state.local_x, self.uav_state.local_y, self.uav_state.local_z = self.aug_positions[5][0], self.aug_positions[6][0], self.aug_positions[7][0]
-
-		self.uav_state.local_vx, self.uav_state.local_vy, self.uav_state.local_vz = self.aug_positions[8][0], self.aug_positions[9][0], self.aug_positions[10][0]
-
-		self.uav_state.local_ax, self.uav_state.local_ay, self.uav_state.local_az = self.aug_positions[11][0], self.aug_positions[12][0], self.aug_positions[13][0]
-
-		#print(self.uav_state)
-
-		#print(len(self.drefs))
-
-		self.state_publisher.publish(self.uav_state)
+		self.UAVLocalState_Update()
+			
 
 
 def main(args = None):

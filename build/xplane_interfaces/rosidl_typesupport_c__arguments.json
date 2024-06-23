@@ -4,8 +4,11 @@
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_c/resource",
   "idl_tuples": [
     "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces:msg/UAVState.idl",
+    "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces:msg/UAVGlobalState.idl",
+    "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces:msg/UAVLocalState.idl",
     "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces:msg/UAVType.idl",
-    "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces:msg/UAVControl.idl"
+    "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces:msg/UAVControl.idl",
+    "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces:msg/UAVAutoPilot.idl"
   ],
   "ros_interface_dependencies": [
     "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
@@ -49,8 +52,11 @@
     "/opt/ros/humble/share/rosidl_typesupport_c/resource/msg__type_support.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_c/resource/srv__type_support.cpp.em",
     "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces/msg/UAVState.idl",
+    "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces/msg/UAVGlobalState.idl",
+    "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces/msg/UAVLocalState.idl",
     "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces/msg/UAVType.idl",
     "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces/msg/UAVControl.idl",
+    "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces/msg/UAVAutoPilot.idl",
     "/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
     "/opt/ros/humble/share/builtin_interfaces/msg/Time.idl",
     "/opt/ros/humble/share/std_msgs/msg/Bool.idl",

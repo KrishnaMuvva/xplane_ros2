@@ -1,0 +1,36 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from xplane_interfaces/msg/UAVLocalState.msg
+// generated code does not contain a copyright notice
+
+
+module xplane_interfaces {
+  module msg {
+    struct UAVLocalState {
+      double local_x;
+
+      double local_y;
+
+      double local_z;
+
+      double local_vx;
+
+      double local_vy;
+
+      double local_vz;
+
+      double local_ax;
+
+      double local_ay;
+
+      double local_az;
+
+      double roll;
+
+      double pitch;
+
+      double yaw;
+
+      double airspeed;
+    };
+  };
+};

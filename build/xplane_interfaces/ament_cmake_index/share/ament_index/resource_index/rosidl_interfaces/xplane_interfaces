@@ -1,5 +1,11 @@
+msg/UAVAutoPilot.idl
+msg/UAVAutoPilot.msg
 msg/UAVControl.idl
 msg/UAVControl.msg
+msg/UAVGlobalState.idl
+msg/UAVGlobalState.msg
+msg/UAVLocalState.idl
+msg/UAVLocalState.msg
 msg/UAVState.idl
 msg/UAVState.msg
 msg/UAVType.idl

@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from xplane_interfaces/msg/UAVGlobalState.msg
+// generated code does not contain a copyright notice
+
+
+module xplane_interfaces {
+  module msg {
+    struct UAVGlobalState {
+      double lattitude;
+
+      double longitude;
+
+      double altitude_msl;
+
+      double altitude_agl;
+
+      double global_roll;
+
+      double global_pitch;
+
+      double global_yaw;
+
+      double groundspeed;
+    };
+  };
+};

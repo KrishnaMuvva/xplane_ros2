@@ -1,5 +1,6 @@
 /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main/data_collection.py
 /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main/uav_control_node.py
+/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main/takeoff.py
 /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main/uav_state_node.py
 /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main/takeoff_cruise.py
 /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main/test.py
@@ -9,6 +10,7 @@
 /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main/environment_state_node.py
 /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main/__pycache__/data_collection.cpython-310.pyc
 /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main/__pycache__/uav_control_node.cpython-310.pyc
+/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main/__pycache__/takeoff.cpython-310.pyc
 /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main/__pycache__/uav_state_node.cpython-310.pyc
 /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main/__pycache__/takeoff_cruise.cpython-310.pyc
 /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main/__pycache__/test.cpython-310.pyc

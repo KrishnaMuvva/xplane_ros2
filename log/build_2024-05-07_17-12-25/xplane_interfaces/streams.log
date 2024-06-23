@@ -1,0 +1,334 @@
+[0.010s] Invoking command in '/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main:/opt/ros/humble /usr/bin/cmake --build /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces -- -j24 -l24
+[0.034s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.144s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[0.168s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.169s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.175s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.184s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.196s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.243s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.245s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.342s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.471s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.477s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.742s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.110s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.253s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.273s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.293s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.293s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.293s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.316s] -- Added test 'lint_cmake' to check CMake code style
+[1.317s] -- Added test 'xmllint' to check XML markup files
+[1.319s] -- Configuring done
+[1.353s] -- Generating done
+[1.356s] -- Build files have been written to: /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces
+[1.381s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.389s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.400s] [  3%] Built target ament_cmake_python_copy_xplane_interfaces
+[1.607s] running egg_info
+[1.608s] writing xplane_interfaces.egg-info/PKG-INFO
+[1.608s] writing dependency_links to xplane_interfaces.egg-info/dependency_links.txt
+[1.608s] writing top-level names to xplane_interfaces.egg-info/top_level.txt
+[1.610s] reading manifest file 'xplane_interfaces.egg-info/SOURCES.txt'
+[1.610s] writing manifest file 'xplane_interfaces.egg-info/SOURCES.txt'
+[1.638s] [  3%] Built target ament_cmake_python_build_xplane_interfaces_egg
+[1.803s] [35m[1mConsolidate compiler generated dependencies of target xplane_interfaces__rosidl_generator_c[0m
+[1.808s] [  3%] Built target xplane_interfaces__cpp
+[1.814s] [  7%] [32mBuilding C object CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_state__functions.c.o[0m
+[1.815s] [  7%] [32mBuilding C object CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__functions.c.o[0m
+[1.815s] [  7%] [32mBuilding C object CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_global_state__functions.c.o[0m
+[1.815s] [  9%] [32mBuilding C object CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.c.o[0m
+[1.815s] [ 11%] [32mBuilding C object CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_type__functions.c.o[0m
+[1.818s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.819s] [ 15%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.819s] [ 15%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.880s] [ 17%] [32m[1mLinking C shared library libxplane_interfaces__rosidl_generator_c.so[0m
+[1.918s] [ 17%] Built target xplane_interfaces__rosidl_generator_c
+[1.930s] [ 22%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.930s] [ 22%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.930s] [ 22%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.165s] [35m[1mConsolidate compiler generated dependencies of target xplane_interfaces__rosidl_typesupport_cpp[0m
+[2.181s] [ 25%] [32mBuilding CXX object CMakeFiles/xplane_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/xplane_interfaces/msg/uav_global_state__type_support.cpp.o[0m
+[2.181s] [ 25%] [32mBuilding CXX object CMakeFiles/xplane_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/xplane_interfaces/msg/uav_state__type_support.cpp.o[0m
+[2.182s] [ 26%] [32mBuilding CXX object CMakeFiles/xplane_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/xplane_interfaces/msg/uav_control__type_support.cpp.o[0m
+[2.184s] [ 28%] [32mBuilding CXX object CMakeFiles/xplane_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/xplane_interfaces/msg/uav_local_state__type_support.cpp.o[0m
+[2.185s] [ 30%] [32mBuilding CXX object CMakeFiles/xplane_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/xplane_interfaces/msg/uav_type__type_support.cpp.o[0m
+[2.216s] [35m[1mConsolidate compiler generated dependencies of target xplane_interfaces__rosidl_typesupport_introspection_cpp[0m
+[2.244s] [ 33%] [32mBuilding CXX object CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/xplane_interfaces/msg/detail/uav_state__type_support.cpp.o[0m
+[2.244s] [ 34%] [32mBuilding CXX object CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/xplane_interfaces/msg/detail/uav_local_state__type_support.cpp.o[0m
+[2.245s] [ 34%] [32mBuilding CXX object CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/xplane_interfaces/msg/detail/uav_global_state__type_support.cpp.o[0m
+[2.245s] [ 38%] [32mBuilding CXX object CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/xplane_interfaces/msg/detail/uav_control__type_support.cpp.o[0m
+[2.245s] [ 38%] [32mBuilding CXX object CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/xplane_interfaces/msg/detail/uav_type__type_support.cpp.o[0m
+[2.277s] [35m[1mConsolidate compiler generated dependencies of target xplane_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[2.289s] [35m[1mConsolidate compiler generated dependencies of target xplane_interfaces__rosidl_typesupport_c[0m
+[2.301s] [ 39%] [32mBuilding CXX object CMakeFiles/xplane_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/xplane_interfaces/msg/detail/dds_fastrtps/uav_state__type_support.cpp.o[0m
+[2.302s] [ 41%] [32mBuilding CXX object CMakeFiles/xplane_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/xplane_interfaces/msg/detail/dds_fastrtps/uav_global_state__type_support.cpp.o[0m
+[2.303s] [ 42%] [32mBuilding CXX object CMakeFiles/xplane_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/xplane_interfaces/msg/detail/dds_fastrtps/uav_local_state__type_support.cpp.o[0m
+[2.304s] [ 44%] [32mBuilding CXX object CMakeFiles/xplane_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/xplane_interfaces/msg/detail/dds_fastrtps/uav_type__type_support.cpp.o[0m
+[2.304s] [ 46%] [32mBuilding CXX object CMakeFiles/xplane_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/xplane_interfaces/msg/detail/dds_fastrtps/uav_control__type_support.cpp.o[0m
+[2.304s] [ 47%] [32mBuilding CXX object CMakeFiles/xplane_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/xplane_interfaces/msg/uav_state__type_support.cpp.o[0m
+[2.304s] [ 49%] [32mBuilding CXX object CMakeFiles/xplane_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/xplane_interfaces/msg/uav_global_state__type_support.cpp.o[0m
+[2.305s] [ 52%] [32mBuilding CXX object CMakeFiles/xplane_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/xplane_interfaces/msg/uav_type__type_support.cpp.o[0m
+[2.305s] [ 52%] [32mBuilding CXX object CMakeFiles/xplane_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/xplane_interfaces/msg/uav_control__type_support.cpp.o[0m
+[2.305s] [ 53%] [32mBuilding CXX object CMakeFiles/xplane_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/xplane_interfaces/msg/uav_local_state__type_support.cpp.o[0m
+[2.356s] [ 55%] [32m[1mLinking CXX shared library libxplane_interfaces__rosidl_typesupport_c.so[0m
+[2.425s] [ 55%] Built target xplane_interfaces__rosidl_typesupport_c
+[2.432s] [35m[1mConsolidate compiler generated dependencies of target xplane_interfaces__rosidl_typesupport_introspection_c[0m
+[2.450s] [ 58%] [32mBuilding C object CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_local_state__type_support.c.o[0m
+[2.451s] [ 60%] [32mBuilding C object CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_state__type_support.c.o[0m
+[2.451s] [ 60%] [32mBuilding C object CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_global_state__type_support.c.o[0m
+[2.451s] [ 61%] [32mBuilding C object CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__type_support.c.o[0m
+[2.451s] [ 63%] [32mBuilding C object CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_control__type_support.c.o[0m
+[2.504s] [35m[1mConsolidate compiler generated dependencies of target xplane_interfaces__rosidl_typesupport_fastrtps_c[0m
+[2.525s] [ 65%] [32m[1mLinking C shared library libxplane_interfaces__rosidl_typesupport_introspection_c.so[0m
+[2.533s] [ 66%] [32mBuilding CXX object CMakeFiles/xplane_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xplane_interfaces/msg/detail/uav_type__type_support_c.cpp.o[0m
+[2.534s] [ 71%] [32mBuilding CXX object CMakeFiles/xplane_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xplane_interfaces/msg/detail/uav_state__type_support_c.cpp.o[0m
+[2.534s] [ 71%] [32mBuilding CXX object CMakeFiles/xplane_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xplane_interfaces/msg/detail/uav_global_state__type_support_c.cpp.o[0m
+[2.534s] [ 73%] [32mBuilding CXX object CMakeFiles/xplane_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xplane_interfaces/msg/detail/uav_local_state__type_support_c.cpp.o[0m
+[2.535s] [ 73%] [32mBuilding CXX object CMakeFiles/xplane_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xplane_interfaces/msg/detail/uav_control__type_support_c.cpp.o[0m
+[2.576s] [ 73%] Built target xplane_interfaces__rosidl_typesupport_introspection_c
+[2.678s] [ 74%] [32m[1mLinking CXX shared library libxplane_interfaces__rosidl_typesupport_cpp.so[0m
+[2.754s] [ 74%] Built target xplane_interfaces__rosidl_typesupport_cpp
+[2.970s] [ 76%] [32m[1mLinking CXX shared library libxplane_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[3.014s] [ 77%] [32m[1mLinking CXX shared library libxplane_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.031s] [ 77%] Built target xplane_interfaces__rosidl_typesupport_introspection_cpp
+[3.087s] [ 77%] Built target xplane_interfaces__rosidl_typesupport_fastrtps_cpp
+[3.108s] [ 79%] [32m[1mLinking CXX shared library libxplane_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[3.178s] [ 79%] Built target xplane_interfaces__rosidl_typesupport_fastrtps_c
+[3.197s] [ 79%] Built target xplane_interfaces
+[3.216s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[3.792s] [ 80%] Built target xplane_interfaces__py
+[3.802s] [35m[1mConsolidate compiler generated dependencies of target xplane_interfaces__rosidl_generator_py[0m
+[3.818s] [ 82%] [32mBuilding C object CMakeFiles/xplane_interfaces__rosidl_generator_py.dir/rosidl_generator_py/xplane_interfaces/msg/_uav_state_s.c.o[0m
+[3.819s] [ 85%] [32mBuilding C object CMakeFiles/xplane_interfaces__rosidl_generator_py.dir/rosidl_generator_py/xplane_interfaces/msg/_uav_global_state_s.c.o[0m
+[3.819s] [ 85%] [32mBuilding C object CMakeFiles/xplane_interfaces__rosidl_generator_py.dir/rosidl_generator_py/xplane_interfaces/msg/_uav_local_state_s.c.o[0m
+[3.819s] [ 87%] [32mBuilding C object CMakeFiles/xplane_interfaces__rosidl_generator_py.dir/rosidl_generator_py/xplane_interfaces/msg/_uav_type_s.c.o[0m
+[3.819s] [ 88%] [32mBuilding C object CMakeFiles/xplane_interfaces__rosidl_generator_py.dir/rosidl_generator_py/xplane_interfaces/msg/_uav_control_s.c.o[0m
+[3.933s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/xplane_interfaces/libxplane_interfaces__rosidl_generator_py.so[0m
+[3.975s] [ 90%] Built target xplane_interfaces__rosidl_generator_py
+[3.986s] [35m[1mConsolidate compiler generated dependencies of target xplane_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[3.986s] [35m[1mConsolidate compiler generated dependencies of target xplane_interfaces__rosidl_typesupport_c__pyext[0m
+[3.986s] [35m[1mConsolidate compiler generated dependencies of target xplane_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[3.999s] [ 95%] [32mBuilding C object CMakeFiles/xplane_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[3.999s] [ 95%] [32mBuilding C object CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.999s] [ 95%] [32mBuilding C object CMakeFiles/xplane_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[4.104s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/xplane_interfaces/xplane_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.108s] [100%] [32m[1mLinking C shared library rosidl_generator_py/xplane_interfaces/xplane_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.109s] [100%] [32m[1mLinking C shared library rosidl_generator_py/xplane_interfaces/xplane_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.143s] [100%] Built target xplane_interfaces__rosidl_typesupport_c__pyext
+[4.146s] [100%] Built target xplane_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[4.147s] [100%] Built target xplane_interfaces__rosidl_typesupport_introspection_c__pyext
+[4.159s] Invoked command in '/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main:/opt/ros/humble /usr/bin/cmake --build /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces -- -j24 -l24
+[4.297s] Invoking command in '/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main:/opt/ros/humble /usr/bin/cmake --install /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces
+[4.308s] -- Install configuration: ""
+[4.308s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/ament_index/resource_index/rosidl_interfaces/xplane_interfaces
+[4.308s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces
+[4.308s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg
+[4.308s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/uav_state.h
+[4.308s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/uav_local_state.h
+[4.308s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/uav_global_state.h
+[4.308s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/uav_type.h
+[4.308s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail
+[4.308s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_control__struct.h
+[4.309s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_state__struct.h
+[4.309s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_state__functions.c
+[4.309s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_state__type_support.h
+[4.309s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_local_state__struct.h
+[4.309s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_type__type_support.h
+[4.309s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_global_state__struct.h
+[4.309s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_global_state__type_support.h
+[4.309s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_control__functions.h
+[4.309s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_global_state__functions.h
+[4.309s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_state__functions.h
+[4.309s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_type__functions.h
+[4.309s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_local_state__type_support.h
+[4.310s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_type__struct.h
+[4.310s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_control__functions.c
+[4.310s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_local_state__functions.h
+[4.310s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_control__type_support.h
+[4.310s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_local_state__functions.c
+[4.310s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_type__functions.c
+[4.310s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_global_state__functions.c
+[4.310s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/rosidl_generator_c__visibility_control.h
+[4.310s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/uav_control.h
+[4.310s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/environment/library_path.sh
+[4.310s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/environment/library_path.dsv
+[4.310s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/lib/libxplane_interfaces__rosidl_generator_c.so
+[4.311s] -- Set runtime path of "/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/lib/libxplane_interfaces__rosidl_generator_c.so" to ""
+[4.311s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces
+[4.311s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg
+[4.311s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[4.311s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail
+[4.311s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_state__rosidl_typesupport_fastrtps_c.h
+[4.311s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_type__rosidl_typesupport_fastrtps_c.h
+[4.311s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_control__rosidl_typesupport_fastrtps_c.h
+[4.311s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_global_state__rosidl_typesupport_fastrtps_c.h
+[4.311s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_local_state__rosidl_typesupport_fastrtps_c.h
+[4.311s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/lib/libxplane_interfaces__rosidl_typesupport_fastrtps_c.so
+[4.312s] -- Set runtime path of "/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/lib/libxplane_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[4.312s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces
+[4.312s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg
+[4.312s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/uav_state.hpp
+[4.312s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/uav_global_state.hpp
+[4.312s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/uav_local_state.hpp
+[4.312s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/uav_control.hpp
+[4.312s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/uav_type.hpp
+[4.312s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail
+[4.312s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_state__traits.hpp
+[4.312s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_control__struct.hpp
+[4.313s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_state__struct.hpp
+[4.313s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_type__builder.hpp
+[4.313s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_local_state__builder.hpp
+[4.313s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_local_state__struct.hpp
+[4.313s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_global_state__traits.hpp
+[4.313s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_type__struct.hpp
+[4.313s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_control__builder.hpp
+[4.313s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_local_state__traits.hpp
+[4.313s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_global_state__builder.hpp
+[4.313s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_global_state__struct.hpp
+[4.313s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_type__traits.hpp
+[4.313s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_control__traits.hpp
+[4.313s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_state__builder.hpp
+[4.314s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces
+[4.314s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg
+[4.314s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[4.314s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail
+[4.314s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_type__rosidl_typesupport_fastrtps_cpp.hpp
+[4.314s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_control__rosidl_typesupport_fastrtps_cpp.hpp
+[4.314s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_global_state__rosidl_typesupport_fastrtps_cpp.hpp
+[4.314s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_local_state__rosidl_typesupport_fastrtps_cpp.hpp
+[4.314s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/dds_fastrtps
+[4.314s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_state__rosidl_typesupport_fastrtps_cpp.hpp
+[4.314s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/lib/libxplane_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[4.315s] -- Set runtime path of "/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/lib/libxplane_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[4.315s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces
+[4.315s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg
+[4.315s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[4.315s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail
+[4.315s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_local_state__type_support.c
+[4.315s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_type__rosidl_typesupport_introspection_c.h
+[4.315s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_control__rosidl_typesupport_introspection_c.h
+[4.315s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_global_state__type_support.c
+[4.315s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_state__type_support.c
+[4.315s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_control__type_support.c
+[4.315s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_global_state__rosidl_typesupport_introspection_c.h
+[4.315s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_state__rosidl_typesupport_introspection_c.h
+[4.315s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_type__type_support.c
+[4.315s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_local_state__rosidl_typesupport_introspection_c.h
+[4.316s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/lib/libxplane_interfaces__rosidl_typesupport_introspection_c.so
+[4.316s] -- Set runtime path of "/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/lib/libxplane_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[4.316s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/lib/libxplane_interfaces__rosidl_typesupport_c.so
+[4.316s] -- Set runtime path of "/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/lib/libxplane_interfaces__rosidl_typesupport_c.so" to ""
+[4.316s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces
+[4.316s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg
+[4.316s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail
+[4.316s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_type__rosidl_typesupport_introspection_cpp.hpp
+[4.317s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_state__type_support.cpp
+[4.317s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_control__type_support.cpp
+[4.317s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_local_state__type_support.cpp
+[4.317s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_global_state__type_support.cpp
+[4.317s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_local_state__rosidl_typesupport_introspection_cpp.hpp
+[4.317s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_global_state__rosidl_typesupport_introspection_cpp.hpp
+[4.317s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_control__rosidl_typesupport_introspection_cpp.hpp
+[4.317s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_state__rosidl_typesupport_introspection_cpp.hpp
+[4.317s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/include/xplane_interfaces/xplane_interfaces/msg/detail/uav_type__type_support.cpp
+[4.317s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/lib/libxplane_interfaces__rosidl_typesupport_introspection_cpp.so
+[4.318s] -- Set runtime path of "/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/lib/libxplane_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[4.318s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/lib/libxplane_interfaces__rosidl_typesupport_cpp.so
+[4.318s] -- Set runtime path of "/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/lib/libxplane_interfaces__rosidl_typesupport_cpp.so" to ""
+[4.318s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/environment/pythonpath.sh
+[4.319s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/environment/pythonpath.dsv
+[4.319s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces-0.0.0-py3.10.egg-info
+[4.319s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[4.319s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[4.319s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[4.319s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[4.319s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces
+[4.319s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/xplane_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.319s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[4.319s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/xplane_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.319s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/msg
+[4.320s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/msg/_uav_global_state.py
+[4.320s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/msg/_uav_control_s.c
+[4.320s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/msg/_uav_type_s.c
+[4.320s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/msg/_uav_type.py
+[4.320s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/msg/_uav_local_state.py
+[4.320s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/msg/_uav_state_s.c
+[4.320s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/msg/_uav_state.py
+[4.320s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/msg/_uav_global_state_s.c
+[4.320s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/msg/_uav_local_state_s.c
+[4.320s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/msg/__init__.py
+[4.320s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/msg/_uav_control.py
+[4.321s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_c.c
+[4.321s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/xplane_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.321s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/_xplane_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[4.321s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/libxplane_interfaces__rosidl_generator_py.so
+[4.321s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/__init__.py
+[4.359s] Listing '/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces'...
+[4.359s] Compiling '/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/__init__.py'...
+[4.359s] Listing '/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/msg'...
+[4.359s] Compiling '/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/msg/__init__.py'...
+[4.359s] Compiling '/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/msg/_uav_control.py'...
+[4.359s] Compiling '/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/msg/_uav_global_state.py'...
+[4.359s] Compiling '/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/msg/_uav_local_state.py'...
+[4.359s] Compiling '/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/msg/_uav_state.py'...
+[4.359s] Compiling '/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/msg/_uav_type.py'...
+[4.364s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/xplane_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.364s] -- Set runtime path of "/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/xplane_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[4.364s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/xplane_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.364s] -- Set runtime path of "/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/xplane_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[4.365s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/xplane_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.365s] -- Set runtime path of "/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/local/lib/python3.10/dist-packages/xplane_interfaces/xplane_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[4.365s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/lib/libxplane_interfaces__rosidl_generator_py.so
+[4.366s] -- Set runtime path of "/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/lib/libxplane_interfaces__rosidl_generator_py.so" to ""
+[4.366s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/msg/UAVState.idl
+[4.366s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/msg/UAVGlobalState.idl
+[4.366s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/msg/UAVLocalState.idl
+[4.366s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/msg/UAVType.idl
+[4.366s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/msg/UAVControl.idl
+[4.366s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/msg/UAVState.msg
+[4.367s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/msg/UAVGlobalState.msg
+[4.367s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/msg/UAVLocalState.msg
+[4.367s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/msg/UAVType.msg
+[4.367s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/msg/UAVControl.msg
+[4.367s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/ament_index/resource_index/package_run_dependencies/xplane_interfaces
+[4.367s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/ament_index/resource_index/parent_prefix_path/xplane_interfaces
+[4.367s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/environment/ament_prefix_path.sh
+[4.368s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/environment/ament_prefix_path.dsv
+[4.368s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/environment/path.sh
+[4.368s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/environment/path.dsv
+[4.368s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/local_setup.bash
+[4.368s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/local_setup.sh
+[4.368s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/local_setup.zsh
+[4.368s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/local_setup.dsv
+[4.369s] -- Installing: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/package.dsv
+[4.369s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/ament_index/resource_index/packages/xplane_interfaces
+[4.369s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/cmake/export_xplane_interfaces__rosidl_generator_cExport.cmake
+[4.369s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/cmake/export_xplane_interfaces__rosidl_generator_cExport-noconfig.cmake
+[4.369s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/cmake/export_xplane_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[4.369s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/cmake/export_xplane_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[4.369s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/cmake/export_xplane_interfaces__rosidl_generator_cppExport.cmake
+[4.369s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/cmake/export_xplane_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[4.370s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/cmake/export_xplane_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[4.370s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/cmake/xplane_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[4.370s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/cmake/xplane_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[4.370s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/cmake/xplane_interfaces__rosidl_typesupport_cExport.cmake
+[4.370s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/cmake/xplane_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[4.370s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/cmake/xplane_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[4.370s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/cmake/xplane_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[4.370s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/cmake/xplane_interfaces__rosidl_typesupport_cppExport.cmake
+[4.370s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/cmake/xplane_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[4.370s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/cmake/export_xplane_interfaces__rosidl_generator_pyExport.cmake
+[4.370s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/cmake/export_xplane_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[4.371s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/cmake/rosidl_cmake-extras.cmake
+[4.371s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.371s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.371s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[4.371s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[4.371s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.371s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.371s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/cmake/xplane_interfacesConfig.cmake
+[4.371s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/cmake/xplane_interfacesConfig-version.cmake
+[4.371s] -- Up-to-date: /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplane_interfaces/share/xplane_interfaces/package.xml
+[4.373s] Invoked command in '/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main:/opt/ros/humble /usr/bin/cmake --install /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces
