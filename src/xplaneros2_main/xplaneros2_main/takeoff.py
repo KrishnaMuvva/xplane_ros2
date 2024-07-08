@@ -54,7 +54,7 @@ class Takeoff(Node):
 		self.uav_global_state_subscriber = self.create_subscription(UAVGlobalState, '/xplane/uav/global_state', self.uav_global_state_cb, 1)
 
 		# Minimum takeoff speeds with respect to the vehicle
-		self.min_takeoff_speeds = {"C172":55, "SF50":75, "BE9L":70, "B738":90, "B744":130, "MD82":140}
+		self.min_takeoff_speeds = {"C172":55, "SF50":75, "BE9L":70, "B738":90, "B744":130, "MD82":140, "":100}
 
 		# Grace time
 		self.start_time, self.wait_time = time.time(), 2

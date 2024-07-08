@@ -11,6 +11,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_state__functions.c.o.d"
   "CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_type__functions.c.o"
   "CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_type__functions.c.o.d"
+  "CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.c.o"
+  "CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.c.o.d"
+  "CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.c.o"
+  "CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.c.o.d"
   "libxplane_interfaces__rosidl_generator_c.pdb"
   "libxplane_interfaces__rosidl_generator_c.so"
   "rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c"
@@ -43,6 +47,16 @@ file(REMOVE_RECURSE
   "rosidl_generator_c/xplane_interfaces/msg/uav_local_state.h"
   "rosidl_generator_c/xplane_interfaces/msg/uav_state.h"
   "rosidl_generator_c/xplane_interfaces/msg/uav_type.h"
+  "rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.c"
+  "rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.h"
+  "rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__struct.h"
+  "rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__type_support.h"
+  "rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.c"
+  "rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.h"
+  "rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__struct.h"
+  "rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__type_support.h"
+  "rosidl_generator_c/xplane_interfaces/srv/landing_gear.h"
+  "rosidl_generator_c/xplane_interfaces/srv/parking_brake.h"
 )
 
 # Per-language clean rules from dependency scanning.

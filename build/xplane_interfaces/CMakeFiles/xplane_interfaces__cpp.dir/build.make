@@ -90,6 +90,14 @@ CMakeFiles/xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/ua
 CMakeFiles/xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_auto_pilot__builder.hpp
 CMakeFiles/xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_auto_pilot__struct.hpp
 CMakeFiles/xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_auto_pilot__traits.hpp
+CMakeFiles/xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/srv/parking_brake.hpp
+CMakeFiles/xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/srv/detail/parking_brake__builder.hpp
+CMakeFiles/xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/srv/detail/parking_brake__struct.hpp
+CMakeFiles/xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/srv/detail/parking_brake__traits.hpp
+CMakeFiles/xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/srv/landing_gear.hpp
+CMakeFiles/xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/srv/detail/landing_gear__builder.hpp
+CMakeFiles/xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/srv/detail/landing_gear__struct.hpp
+CMakeFiles/xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/srv/detail/landing_gear__traits.hpp
 
 rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -112,6 +120,8 @@ rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp: rosidl_adapter/xplane_
 rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp: rosidl_adapter/xplane_interfaces/msg/UAVType.idl
 rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp: rosidl_adapter/xplane_interfaces/msg/UAVControl.idl
 rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp: rosidl_adapter/xplane_interfaces/msg/UAVAutoPilot.idl
+rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp: rosidl_adapter/xplane_interfaces/srv/ParkingBrake.idl
+rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp: rosidl_adapter/xplane_interfaces/srv/LandingGear.idl
 rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp: /opt/ros/humble/share/std_msgs/msg/Bool.idl
@@ -216,6 +226,30 @@ rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_auto_pilot__struct.hpp: ro
 rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_auto_pilot__traits.hpp: rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_auto_pilot__traits.hpp
 
+rosidl_generator_cpp/xplane_interfaces/srv/parking_brake.hpp: rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/xplane_interfaces/srv/parking_brake.hpp
+
+rosidl_generator_cpp/xplane_interfaces/srv/detail/parking_brake__builder.hpp: rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/xplane_interfaces/srv/detail/parking_brake__builder.hpp
+
+rosidl_generator_cpp/xplane_interfaces/srv/detail/parking_brake__struct.hpp: rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/xplane_interfaces/srv/detail/parking_brake__struct.hpp
+
+rosidl_generator_cpp/xplane_interfaces/srv/detail/parking_brake__traits.hpp: rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/xplane_interfaces/srv/detail/parking_brake__traits.hpp
+
+rosidl_generator_cpp/xplane_interfaces/srv/landing_gear.hpp: rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/xplane_interfaces/srv/landing_gear.hpp
+
+rosidl_generator_cpp/xplane_interfaces/srv/detail/landing_gear__builder.hpp: rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/xplane_interfaces/srv/detail/landing_gear__builder.hpp
+
+rosidl_generator_cpp/xplane_interfaces/srv/detail/landing_gear__struct.hpp: rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/xplane_interfaces/srv/detail/landing_gear__struct.hpp
+
+rosidl_generator_cpp/xplane_interfaces/srv/detail/landing_gear__traits.hpp: rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/xplane_interfaces/srv/detail/landing_gear__traits.hpp
+
 xplane_interfaces__cpp: CMakeFiles/xplane_interfaces__cpp
 xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_auto_pilot__builder.hpp
 xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/detail/uav_auto_pilot__struct.hpp
@@ -241,6 +275,14 @@ xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/uav_global_st
 xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/uav_local_state.hpp
 xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp
 xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/msg/uav_type.hpp
+xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/srv/detail/landing_gear__builder.hpp
+xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/srv/detail/landing_gear__struct.hpp
+xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/srv/detail/landing_gear__traits.hpp
+xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/srv/detail/parking_brake__builder.hpp
+xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/srv/detail/parking_brake__struct.hpp
+xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/srv/detail/parking_brake__traits.hpp
+xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/srv/landing_gear.hpp
+xplane_interfaces__cpp: rosidl_generator_cpp/xplane_interfaces/srv/parking_brake.hpp
 xplane_interfaces__cpp: CMakeFiles/xplane_interfaces__cpp.dir/build.make
 .PHONY : xplane_interfaces__cpp
 

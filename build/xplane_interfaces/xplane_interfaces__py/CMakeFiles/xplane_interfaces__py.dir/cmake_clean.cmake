@@ -15,6 +15,11 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/xplane_interfaces/msg/_uav_state_s.c"
   "../rosidl_generator_py/xplane_interfaces/msg/_uav_type.py"
   "../rosidl_generator_py/xplane_interfaces/msg/_uav_type_s.c"
+  "../rosidl_generator_py/xplane_interfaces/srv/__init__.py"
+  "../rosidl_generator_py/xplane_interfaces/srv/_landing_gear.py"
+  "../rosidl_generator_py/xplane_interfaces/srv/_landing_gear_s.c"
+  "../rosidl_generator_py/xplane_interfaces/srv/_parking_brake.py"
+  "../rosidl_generator_py/xplane_interfaces/srv/_parking_brake_s.c"
   "CMakeFiles/xplane_interfaces__py"
 )
 

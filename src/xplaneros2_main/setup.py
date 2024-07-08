@@ -25,7 +25,8 @@ setup(
         'console_scripts': [
             'uav_state_node = xplaneros2_main.uav_state_node:main',
             'uav_control_node = xplaneros2_main.uav_control_node:main',
-            'data_collection = xplaneros2_main.data_collection:main'
+            'data_collection = xplaneros2_main.data_collection:main',
+            'additional_controls = xplaneros2_main.additional_controls:main'
         ],
     },
 )

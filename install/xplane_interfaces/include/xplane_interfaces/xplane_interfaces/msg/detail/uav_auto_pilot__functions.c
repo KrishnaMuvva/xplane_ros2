@@ -18,6 +18,9 @@ xplane_interfaces__msg__UAVAutoPilot__init(xplane_interfaces__msg__UAVAutoPilot 
     return false;
   }
   // heading
+  // altitude
+  // airspeed
+  // vertical_velocity
   return true;
 }
 
@@ -28,6 +31,9 @@ xplane_interfaces__msg__UAVAutoPilot__fini(xplane_interfaces__msg__UAVAutoPilot 
     return;
   }
   // heading
+  // altitude
+  // airspeed
+  // vertical_velocity
 }
 
 bool
@@ -38,6 +44,18 @@ xplane_interfaces__msg__UAVAutoPilot__are_equal(const xplane_interfaces__msg__UA
   }
   // heading
   if (lhs->heading != rhs->heading) {
+    return false;
+  }
+  // altitude
+  if (lhs->altitude != rhs->altitude) {
+    return false;
+  }
+  // airspeed
+  if (lhs->airspeed != rhs->airspeed) {
+    return false;
+  }
+  // vertical_velocity
+  if (lhs->vertical_velocity != rhs->vertical_velocity) {
     return false;
   }
   return true;
@@ -53,6 +71,12 @@ xplane_interfaces__msg__UAVAutoPilot__copy(
   }
   // heading
   output->heading = input->heading;
+  // altitude
+  output->altitude = input->altitude;
+  // airspeed
+  output->airspeed = input->airspeed;
+  // vertical_velocity
+  output->vertical_velocity = input->vertical_velocity;
   return true;
 }
 

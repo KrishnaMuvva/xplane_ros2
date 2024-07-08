@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from xplane_interfaces/srv/ParkingBrake.srv
+// generated code does not contain a copyright notice
+
+
+module xplane_interfaces {
+  module srv {
+    struct ParkingBrake_Request {
+      boolean parking_brake;
+    };
+    struct ParkingBrake_Response {
+      boolean brake_release;
+    };
+  };
+};

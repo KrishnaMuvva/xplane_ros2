@@ -31,7 +31,7 @@ void xplane_interfaces__msg__UAVAutoPilot__rosidl_typesupport_introspection_c__U
   xplane_interfaces__msg__UAVAutoPilot__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember xplane_interfaces__msg__UAVAutoPilot__rosidl_typesupport_introspection_c__UAVAutoPilot_message_member_array[1] = {
+static rosidl_typesupport_introspection_c__MessageMember xplane_interfaces__msg__UAVAutoPilot__rosidl_typesupport_introspection_c__UAVAutoPilot_message_member_array[4] = {
   {
     "heading",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
@@ -48,13 +48,64 @@ static rosidl_typesupport_introspection_c__MessageMember xplane_interfaces__msg_
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "altitude",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(xplane_interfaces__msg__UAVAutoPilot, altitude),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "airspeed",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(xplane_interfaces__msg__UAVAutoPilot, airspeed),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "vertical_velocity",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(xplane_interfaces__msg__UAVAutoPilot, vertical_velocity),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers xplane_interfaces__msg__UAVAutoPilot__rosidl_typesupport_introspection_c__UAVAutoPilot_message_members = {
   "xplane_interfaces__msg",  // message namespace
   "UAVAutoPilot",  // message name
-  1,  // number of fields
+  4,  // number of fields
   sizeof(xplane_interfaces__msg__UAVAutoPilot),
   xplane_interfaces__msg__UAVAutoPilot__rosidl_typesupport_introspection_c__UAVAutoPilot_message_member_array,  // message members
   xplane_interfaces__msg__UAVAutoPilot__rosidl_typesupport_introspection_c__UAVAutoPilot_init_function,  // function to initialize message memory (memory has to be allocated)

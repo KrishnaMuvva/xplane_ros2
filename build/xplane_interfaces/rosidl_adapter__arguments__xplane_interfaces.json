@@ -6,6 +6,8 @@
     "/home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces:msg/UAVLocalState.msg",
     "/home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces:msg/UAVType.msg",
     "/home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces:msg/UAVControl.msg",
-    "/home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces:msg/UAVAutoPilot.msg"
+    "/home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces:msg/UAVAutoPilot.msg",
+    "/home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces:srv/ParkingBrake.srv",
+    "/home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces:srv/LandingGear.srv"
   ]
 }

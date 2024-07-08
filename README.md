@@ -77,15 +77,36 @@ ros2 launch xplaneros2_main xplane_ros2_launch.py
 
 ### Autonomous Takeoff
 
-Autonomous Takeoff and Cruise Script
+Autonomous Takeoff Script
 
 ``` shell
 
-python3 takeoff_cruise.py
+python3 takeoff.py
 
 ```
 
+#### Autonomous Takeoff B737
+
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/GQZEaKGTUPU/0.jpg)](https://www.youtube.com/watch?v=GQZEaKGTUPU)
+
+
+#### Autonomous Takeoff C172
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/FXIXJIdJc0w/0.jpg)](https://www.youtube.com/watch?v=FXIXJIdJc0w)
+
+#### Autonomous Takeoff B747
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/18DFC2xwiJM/0.jpg)](https://www.youtube.com/watch?v=18DFC2xwiJM)
+
 
 ### Autonomous Traffic Patterns
 
+Autonomous Traffic Pattern Script (Note: Make sure that autopilot is on)
+
+``` shell
+
+python3 traffic_pattern.py
+
+```
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/6SplI0cyI7c/0.jpg)](https://www.youtube.com/watch?v=6SplI0cyI7c)

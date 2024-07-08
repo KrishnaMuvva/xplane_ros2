@@ -5,8 +5,12 @@ xplane_interfaces.egg-info/SOURCES.txt
 xplane_interfaces.egg-info/dependency_links.txt
 xplane_interfaces.egg-info/top_level.txt
 xplane_interfaces/msg/__init__.py
+xplane_interfaces/msg/_uav_auto_pilot.py
 xplane_interfaces/msg/_uav_control.py
 xplane_interfaces/msg/_uav_global_state.py
 xplane_interfaces/msg/_uav_local_state.py
 xplane_interfaces/msg/_uav_state.py
 xplane_interfaces/msg/_uav_type.py
+xplane_interfaces/srv/__init__.py
+xplane_interfaces/srv/_landing_gear.py
+xplane_interfaces/srv/_parking_brake.py

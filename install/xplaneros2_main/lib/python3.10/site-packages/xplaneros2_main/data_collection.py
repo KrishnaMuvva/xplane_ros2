@@ -9,7 +9,7 @@ import xpc
 import rclpy
 from rclpy.node import Node
 
-from xplane_interfaces.msg import UAVState, UAVControl
+from xplane_interfaces.msg import UAVGlobalState, UAVLocalState, UAVControl
 
 class Data(Node):
 
@@ -17,9 +17,12 @@ class Data(Node):
 
 		super().__init__('data_collection')
 
-		self.uav_state = UAVState()
+		self.uav_global_state, self.uav_local_state = UAVGlobalState(), UAVLocalState()
 
-		self.uav_state_subscriber = self.create_subscription(UAVState, '/xplane/uav/state', self.uav_state_cb, 1)
+		self.uav_local_state_subscriber = self.create_subscription(UAVLocalState, '/xplane/uav/local_state', self.uav_local_state_cb, 1)
+
+		# Global state subscriber
+		self.uav_global_state_subscriber = self.create_subscription(UAVGlobalState, '/xplane/uav/global_state', self.uav_global_state_cb, 1)
 
 		self.csv_file = open("pose.csv", "w")
 		self.csv_file.write("X , Y, Z, Vx, Vy, Vz, AirSpeed\n")
@@ -29,13 +32,18 @@ class Data(Node):
 		self.timer = self.create_timer(self.time_period, self.timer_loop)
 
 
-	def uav_state_cb(self, uav_state):
+	def uav_local_state_cb(self, uav_local_state):
 
-		self.uav_state = uav_state
+		self.uav_local_state = uav_local_state
+
+
+	def uav_global_state_cb(self, uav_global_state):
+
+		self.uav_global_state = uav_global_state
 
 	def timer_loop(self):
 
-		data_str = str(self.uav_state.local_x)+","+str(self.uav_state.local_y)+","+str(self.uav_state.local_z)+","+str(self.uav_state.local_vx)+","+str(self.uav_state.local_vy)+","+str(self.uav_state.local_vz)+","+str(self.uav_state.airspeed)+"\n"
+		data_str = str(self.uav_local_state.local_x)+","+str(self.uav_local_state.local_y)+","+str(self.uav_local_state.local_z)+","+str(self.uav_local_state.local_vx)+","+str(self.uav_local_state.local_vy)+","+str(self.uav_local_state.local_vz)+","+str(self.uav_local_state.airspeed)+"\n"
 
 		self.csv_file.write(data_str)
 

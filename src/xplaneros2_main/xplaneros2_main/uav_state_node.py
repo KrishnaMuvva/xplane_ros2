@@ -8,7 +8,7 @@ import xpc
 import rclpy
 from rclpy.node import Node
 
-from xplane_interfaces.msg import UAVGlobalState, UAVLocalState, UAVType
+from xplane_interfaces.msg import UAVGlobalState, UAVLocalState, UAVType, UAVAutoPilot
 
 class Xplane_State_Node(Node):
 
@@ -33,6 +33,8 @@ class Xplane_State_Node(Node):
 		self.UAVGlobalState_Datarefs()
 
 		self.UAVLocalState_Datarefs()
+
+		#self.UAVAutoPilot_Datarefs()
 
 		time_period = 0.01
 
@@ -148,9 +150,37 @@ class Xplane_State_Node(Node):
 
 		self.uav_local_state.airspeed = self.local_data[self.airspeed][0]
 
-		print(self.uav_local_state.airspeed)
+		#print(self.uav_local_state.airspeed)
 
 		self.local_state_publisher.publish(self.uav_local_state)
+
+
+	def UAVAutoPilot_Datarefs(self):
+
+		self.autopilot_datarefs = []
+
+		self.autopilot_heading, self.autopilot_altitude, self.autopilot_airspeed, self.autopilot_vertical_velocity = 0,1,2,3
+
+		self.autopilot_datarefs.append("sim/cockpit/autopilot/heading")
+		self.autopilot_datarefs.append("sim/cockpit/autopilot/altitude")
+		self.autopilot_datarefs.append("sim/cockpit/autopilot/airspeed")
+		self.autopilot_datarefs.append("sim/cockpit/autopilot/vertical_velocity")
+
+		self.uav_autopilot = UAVAutoPilot()
+
+		self.autopilot_publisher = self.create_publisher(UAVAutoPilot, '/xplane/uav/autopilot_sub', 1)
+
+
+	def UAVAutoPilot_Update(self):
+
+		self.autopilot_data = self.uas.getDREFs(self.autopilot_datarefs)
+
+		self.uav_autopilot.heading, self.uav_autopilot.altitude = self.autopilot_data[self.autopilot_heading][0], self.autopilot_data[self.autopilot_altitude][0]
+		self.uav_autopilot.airspeed, self.uav_autopilot.vertical_velocity = self.autopilot_data[self.autopilot_airspeed][0], self.autopilot_data[self.autopilot_vertical_velocity][0]
+
+		print(self.uav_autopilot.altitude)
+
+		self.autopilot_publisher.publish(self.uav_autopilot)
 
 	
 	def timer_callback(self):
@@ -164,6 +194,8 @@ class Xplane_State_Node(Node):
 		self.UAVGlobalState_Update()
 
 		self.UAVLocalState_Update()
+
+		#self.UAVAutoPilot_Update()
 			
 
 

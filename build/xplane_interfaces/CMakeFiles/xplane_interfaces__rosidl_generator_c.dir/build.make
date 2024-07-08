@@ -88,6 +88,8 @@ rosidl_generator_c/xplane_interfaces/msg/uav_state.h: rosidl_adapter/xplane_inte
 rosidl_generator_c/xplane_interfaces/msg/uav_state.h: rosidl_adapter/xplane_interfaces/msg/UAVType.idl
 rosidl_generator_c/xplane_interfaces/msg/uav_state.h: rosidl_adapter/xplane_interfaces/msg/UAVControl.idl
 rosidl_generator_c/xplane_interfaces/msg/uav_state.h: rosidl_adapter/xplane_interfaces/msg/UAVAutoPilot.idl
+rosidl_generator_c/xplane_interfaces/msg/uav_state.h: rosidl_adapter/xplane_interfaces/srv/ParkingBrake.idl
+rosidl_generator_c/xplane_interfaces/msg/uav_state.h: rosidl_adapter/xplane_interfaces/srv/LandingGear.idl
 rosidl_generator_c/xplane_interfaces/msg/uav_state.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_c/xplane_interfaces/msg/uav_state.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 rosidl_generator_c/xplane_interfaces/msg/uav_state.h: /opt/ros/humble/share/std_msgs/msg/Bool.idl
@@ -192,6 +194,30 @@ rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__struct.h: rosidl
 rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__type_support.h: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__type_support.h
 
+rosidl_generator_c/xplane_interfaces/srv/parking_brake.h: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/srv/parking_brake.h
+
+rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.h: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.h
+
+rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__struct.h: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__struct.h
+
+rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__type_support.h: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__type_support.h
+
+rosidl_generator_c/xplane_interfaces/srv/landing_gear.h: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/srv/landing_gear.h
+
+rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.h: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.h
+
+rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__struct.h: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__struct.h
+
+rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__type_support.h: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__type_support.h
+
 rosidl_generator_c/xplane_interfaces/msg/detail/uav_state__functions.c: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/msg/detail/uav_state__functions.c
 
@@ -209,6 +235,12 @@ rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.c: rosidl
 
 rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c
+
+rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.c: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.c
+
+rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.c: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.c
 
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_state__functions.c.o: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_state__functions.c.o: rosidl_generator_c/xplane_interfaces/msg/detail/uav_state__functions.c
@@ -294,6 +326,34 @@ CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_i
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c -o CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c.s
 
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.c.o: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.c.o: rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.c
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.c.o: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.c.o -MF CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.c.o.d -o CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.c.o -c /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.c
+
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.c > CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.c.i
+
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.c -o CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.c.s
+
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.c.o: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.c.o: rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.c
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.c.o: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.c.o -MF CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.c.o.d -o CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.c.o -c /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.c
+
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.c > CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.c.i
+
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.c -o CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.c.s
+
 # Object files for target xplane_interfaces__rosidl_generator_c
 xplane_interfaces__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_state__functions.c.o" \
@@ -301,7 +361,9 @@ xplane_interfaces__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__functions.c.o" \
 "CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_type__functions.c.o" \
 "CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.c.o" \
-"CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c.o"
+"CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c.o" \
+"CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.c.o" \
+"CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.c.o"
 
 # External object files for target xplane_interfaces__rosidl_generator_c
 xplane_interfaces__rosidl_generator_c_EXTERNAL_OBJECTS =
@@ -312,13 +374,15 @@ libxplane_interfaces__rosidl_generator_c.so: CMakeFiles/xplane_interfaces__rosid
 libxplane_interfaces__rosidl_generator_c.so: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_type__functions.c.o
 libxplane_interfaces__rosidl_generator_c.so: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.c.o
 libxplane_interfaces__rosidl_generator_c.so: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.c.o
+libxplane_interfaces__rosidl_generator_c.so: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.c.o
+libxplane_interfaces__rosidl_generator_c.so: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.c.o
 libxplane_interfaces__rosidl_generator_c.so: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/build.make
 libxplane_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 libxplane_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 libxplane_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libxplane_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libxplane_interfaces__rosidl_generator_c.so: CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C shared library libxplane_interfaces__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C shared library libxplane_interfaces__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -359,6 +423,16 @@ CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/uav_local_state.h
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/uav_state.h
 CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/msg/uav_type.h
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.c
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.h
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__struct.h
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__type_support.h
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.c
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.h
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__struct.h
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__type_support.h
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/srv/landing_gear.h
+CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/xplane_interfaces/srv/parking_brake.h
 	cd /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces /home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/xplane_interfaces__rosidl_generator_c.dir/depend
 

@@ -29,6 +29,8 @@ class Xplane_Control_Node(Node):
 
 		self.control_sub = self.create_subscription(UAVControl, '/xplane/uav/control', self.control_cb, 1)
 
+		self.AutoPilot_Pub_Init()
+
 		time_period = 0.01
 
 		self.timer = self.create_timer(time_period, self.timer_callback)
@@ -38,6 +40,34 @@ class Xplane_Control_Node(Node):
 
 		self.uav_control = uav_control
 
+	def autopilot_cb(self, uav_autopilot):
+
+		self.uav_autopilot = uav_autopilot
+
+
+	def AutoPilot_Pub_Init(self):
+
+		self.autopilot_datarefs = []
+
+		self.autopilot_heading, self.autopilot_altitude, self.autopilot_airspeed, self.autopilot_vertical_velocity = 0,1,2,3
+
+		self.autopilot_datarefs.append("sim/cockpit/autopilot/heading")
+		self.autopilot_datarefs.append("sim/cockpit/autopilot/altitude")
+		self.autopilot_datarefs.append("sim/cockpit/autopilot/airspeed")
+		self.autopilot_datarefs.append("sim/cockpit/autopilot/vertical_velocity")
+
+		self.uav_autopilot = UAVAutoPilot()
+
+		self.autopilot_publisher = self.create_publisher(UAVAutoPilot, '/xplane/uav/autopilot_pub', 1)
+
+		self.autopilot_sub = self.create_subscription(UAVAutoPilot, '/xplane/uav/autopilot_pub', self.autopilot_cb, 1)
+
+	def UAVAutoPilot_Pub_Update(self):
+
+		autopilot_arr = [self.uav_autopilot.heading, self.uav_autopilot.altitude, self.uav_autopilot.airspeed, self.uav_autopilot.vertical_velocity]
+
+		self.uas.sendDREFs(self.autopilot_datarefs, autopilot_arr)
+
 	
 	def timer_callback(self):
 
@@ -45,7 +75,13 @@ class Xplane_Control_Node(Node):
 
 		self.control[self.elevator], self.control[self.rudder] = self.uav_control.elevator, self.uav_control.rudder
 
-		self.uas.sendCTRL(self.control)
+		if (self.uas.getDREF("sim/cockpit/autopilot/autopilot_mode")[0] > 0.5):
+
+			self.UAVAutoPilot_Pub_Update()
+
+		else:
+
+			self.uas.sendCTRL(self.control)
 
 
 def main(args = None):

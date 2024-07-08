@@ -1,0 +1,9 @@
+[31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+  rosidl_generate_interfaces() the passed file 'srv/Parking_Brake.srv'
+  doesn't exist relative to the CMAKE_CURRENT_SOURCE_DIR
+  '/home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces'
+Call Stack (most recent call first):
+  CMakeLists.txt:26 (rosidl_generate_interfaces)
+
+[0m
+gmake: *** [Makefile:1827: cmake_check_build_system] Error 1

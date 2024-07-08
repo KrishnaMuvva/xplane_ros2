@@ -13,11 +13,15 @@ test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
 xplaneros2_main/__init__.py
+xplaneros2_main/additional_controls.py
 xplaneros2_main/data_collection.py
 xplaneros2_main/environment_state_node.py
+xplaneros2_main/landing_gear_server.py
+xplaneros2_main/parking_brake_server.py
 xplaneros2_main/takeoff.py
-xplaneros2_main/takeoff_cruise.py
+xplaneros2_main/takeoff_cruise_dep.py
 xplaneros2_main/test.py
+xplaneros2_main/traffic_pattern.py
 xplaneros2_main/uav_control_node.py
 xplaneros2_main/uav_state_node.py
 xplaneros2_main/xplane_main.py

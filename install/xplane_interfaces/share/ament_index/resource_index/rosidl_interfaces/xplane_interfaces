@@ -10,3 +10,11 @@ msg/UAVState.idl
 msg/UAVState.msg
 msg/UAVType.idl
 msg/UAVType.msg
+srv/LandingGear.idl
+srv/LandingGear.srv
+srv/LandingGear_Request.msg
+srv/LandingGear_Response.msg
+srv/ParkingBrake.idl
+srv/ParkingBrake.srv
+srv/ParkingBrake_Request.msg
+srv/ParkingBrake_Response.msg

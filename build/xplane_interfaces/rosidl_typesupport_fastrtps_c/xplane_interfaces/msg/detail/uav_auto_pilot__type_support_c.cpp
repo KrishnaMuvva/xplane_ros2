@@ -54,6 +54,21 @@ static bool _UAVAutoPilot__cdr_serialize(
     cdr << ros_message->heading;
   }
 
+  // Field name: altitude
+  {
+    cdr << ros_message->altitude;
+  }
+
+  // Field name: airspeed
+  {
+    cdr << ros_message->airspeed;
+  }
+
+  // Field name: vertical_velocity
+  {
+    cdr << ros_message->vertical_velocity;
+  }
+
   return true;
 }
 
@@ -69,6 +84,21 @@ static bool _UAVAutoPilot__cdr_deserialize(
   // Field name: heading
   {
     cdr >> ros_message->heading;
+  }
+
+  // Field name: altitude
+  {
+    cdr >> ros_message->altitude;
+  }
+
+  // Field name: airspeed
+  {
+    cdr >> ros_message->airspeed;
+  }
+
+  // Field name: vertical_velocity
+  {
+    cdr >> ros_message->vertical_velocity;
   }
 
   return true;
@@ -91,6 +121,24 @@ size_t get_serialized_size_xplane_interfaces__msg__UAVAutoPilot(
   // field.name heading
   {
     size_t item_size = sizeof(ros_message->heading);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name altitude
+  {
+    size_t item_size = sizeof(ros_message->altitude);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name airspeed
+  {
+    size_t item_size = sizeof(ros_message->airspeed);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name vertical_velocity
+  {
+    size_t item_size = sizeof(ros_message->vertical_velocity);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -131,6 +179,30 @@ size_t max_serialized_size_xplane_interfaces__msg__UAVAutoPilot(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
+  // member: altitude
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: airspeed
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: vertical_velocity
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -140,7 +212,7 @@ size_t max_serialized_size_xplane_interfaces__msg__UAVAutoPilot(
     using DataType = xplane_interfaces__msg__UAVAutoPilot;
     is_plain =
       (
-      offsetof(DataType, heading) +
+      offsetof(DataType, vertical_velocity) +
       last_member_size
       ) == ret_val;
   }

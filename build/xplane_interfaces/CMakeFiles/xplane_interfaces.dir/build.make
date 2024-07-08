@@ -72,6 +72,12 @@ CMakeFiles/xplane_interfaces: /home/uas/Documents/blue/git_repos/xplane_ros2/src
 CMakeFiles/xplane_interfaces: /home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces/msg/UAVType.msg
 CMakeFiles/xplane_interfaces: /home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces/msg/UAVControl.msg
 CMakeFiles/xplane_interfaces: /home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces/msg/UAVAutoPilot.msg
+CMakeFiles/xplane_interfaces: /home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces/srv/ParkingBrake.srv
+CMakeFiles/xplane_interfaces: rosidl_cmake/srv/ParkingBrake_Request.msg
+CMakeFiles/xplane_interfaces: rosidl_cmake/srv/ParkingBrake_Response.msg
+CMakeFiles/xplane_interfaces: /home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces/srv/LandingGear.srv
+CMakeFiles/xplane_interfaces: rosidl_cmake/srv/LandingGear_Request.msg
+CMakeFiles/xplane_interfaces: rosidl_cmake/srv/LandingGear_Response.msg
 CMakeFiles/xplane_interfaces: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 CMakeFiles/xplane_interfaces: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 CMakeFiles/xplane_interfaces: /opt/ros/humble/share/std_msgs/msg/Bool.idl

@@ -1,0 +1,28 @@
+[0.457s] Invoking command in '/home/uas/Documents/blue/git_repos/xplane_ros2/src/xplaneros2_main': PYTHONPATH=/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/prefix_override:/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/xplaneros2_main build --build-base /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/build install --record /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/install.log --single-version-externally-managed install_data
+[0.631s] running egg_info
+[0.632s] writing ../../build/xplaneros2_main/xplaneros2_main.egg-info/PKG-INFO
+[0.632s] writing dependency_links to ../../build/xplaneros2_main/xplaneros2_main.egg-info/dependency_links.txt
+[0.632s] writing entry points to ../../build/xplaneros2_main/xplaneros2_main.egg-info/entry_points.txt
+[0.633s] writing requirements to ../../build/xplaneros2_main/xplaneros2_main.egg-info/requires.txt
+[0.633s] writing top-level names to ../../build/xplaneros2_main/xplaneros2_main.egg-info/top_level.txt
+[0.634s] reading manifest file '../../build/xplaneros2_main/xplaneros2_main.egg-info/SOURCES.txt'
+[0.635s] writing manifest file '../../build/xplaneros2_main/xplaneros2_main.egg-info/SOURCES.txt'
+[0.635s] running build
+[0.635s] running build_py
+[0.635s] copying xplaneros2_main/uav_control_node.py -> /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/build/lib/xplaneros2_main
+[0.636s] running install
+[0.636s] running install_lib
+[0.637s] copying /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/build/lib/xplaneros2_main/uav_control_node.py -> /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main
+[0.638s] byte-compiling /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main/uav_control_node.py to uav_control_node.cpython-310.pyc
+[0.639s] byte-compiling /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main/takeoff (copy).py to takeoff (copy).cpython-310.pyc
+[0.639s] running install_data
+[0.639s] Sorry: IndentationError: expected an indented block after function definition on line 190 (takeoff (copy).py, line 217)
+[0.639s] running install_egg_info
+[0.641s] removing '/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main-0.0.0-py3.10.egg-info' (and everything under it)
+[0.641s] Copying ../../build/xplaneros2_main/xplaneros2_main.egg-info to /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages/xplaneros2_main-0.0.0-py3.10.egg-info
+[0.642s] running install_scripts
+[0.660s] Installing data_collection script to /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/xplaneros2_main
+[0.661s] Installing uav_control_node script to /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/xplaneros2_main
+[0.661s] Installing uav_state_node script to /home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/xplaneros2_main
+[0.661s] writing list of installed files to '/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/install.log'
+[0.680s] Invoked command in '/home/uas/Documents/blue/git_repos/xplane_ros2/src/xplaneros2_main' returned '0': PYTHONPATH=/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/prefix_override:/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/xplaneros2_main build --build-base /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/build install --record /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplaneros2_main/install.log --single-version-externally-managed install_data

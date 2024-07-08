@@ -24,6 +24,14 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/xplane_interfaces/msg/uav_local_state.hpp"
   "rosidl_generator_cpp/xplane_interfaces/msg/uav_state.hpp"
   "rosidl_generator_cpp/xplane_interfaces/msg/uav_type.hpp"
+  "rosidl_generator_cpp/xplane_interfaces/srv/detail/landing_gear__builder.hpp"
+  "rosidl_generator_cpp/xplane_interfaces/srv/detail/landing_gear__struct.hpp"
+  "rosidl_generator_cpp/xplane_interfaces/srv/detail/landing_gear__traits.hpp"
+  "rosidl_generator_cpp/xplane_interfaces/srv/detail/parking_brake__builder.hpp"
+  "rosidl_generator_cpp/xplane_interfaces/srv/detail/parking_brake__struct.hpp"
+  "rosidl_generator_cpp/xplane_interfaces/srv/detail/parking_brake__traits.hpp"
+  "rosidl_generator_cpp/xplane_interfaces/srv/landing_gear.hpp"
+  "rosidl_generator_cpp/xplane_interfaces/srv/parking_brake.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

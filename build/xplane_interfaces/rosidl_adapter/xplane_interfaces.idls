@@ -4,3 +4,5 @@
 /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces:msg/UAVType.idl
 /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces:msg/UAVControl.idl
 /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces:msg/UAVAutoPilot.idl
+/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces:srv/ParkingBrake.idl
+/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces:srv/LandingGear.idl

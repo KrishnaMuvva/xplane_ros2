@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from xplane_interfaces/srv/LandingGear.srv
+// generated code does not contain a copyright notice
+
+
+module xplane_interfaces {
+  module srv {
+    struct LandingGear_Request {
+      boolean landing_gear;
+    };
+    struct LandingGear_Response {
+      boolean gear_release;
+    };
+  };
+};

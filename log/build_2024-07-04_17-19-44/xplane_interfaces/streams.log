@@ -1,0 +1,58 @@
+[0.007s] Invoking command in '/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main:/opt/ros/humble /usr/bin/cmake --build /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces -- -j24 -l24
+[0.023s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.104s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[0.122s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.123s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.127s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.134s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.144s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.180s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.181s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.254s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.355s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.359s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.524s] [31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):
+[0.524s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[0.524s]   xplane_interfaces --arguments-file
+[0.524s]   /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter__arguments__xplane_interfaces.json
+[0.524s]   --output-dir
+[0.524s]   /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces
+[0.524s]   --output-file
+[0.524s]   /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces.idls)
+[0.524s]   returned error code 1:
+[0.524s] 
+[0.524s]   Traceback (most recent call last):
+[0.524s] 
+[0.524s]     File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[0.524s]       return _run_code(code, main_globals, None,
+[0.524s]     File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+[0.524s]       exec(code, run_globals)
+[0.524s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[0.524s]       sys.exit(main())
+[0.524s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main
+[0.524s]       abs_idl_file = convert_to_idl(
+[0.524s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 24, in convert_to_idl
+[0.524s]       return convert_srv_to_idl(
+[0.525s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/srv/__init__.py", line 28, in convert_srv_to_idl
+[0.525s]       srv = parse_service_string(package_name, input_file.stem, content)
+[0.525s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 859, in parse_service_string
+[0.525s]       request_message = parse_message_string(
+[0.525s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 544, in parse_message_string
+[0.525s]       msg = MessageSpecification(pkg_name, msg_name, fields, constants)
+[0.525s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 388, in __init__
+[0.525s]       self.base_type = BaseType(
+[0.525s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 205, in __init__
+[0.525s]       raise InvalidResourceName(
+[0.525s] 
+[0.525s]   rosidl_adapter.parser.InvalidResourceName: 'Parking_Brake_Request' is an
+[0.525s]   invalid message name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[0.525s] 
+[0.525s] Call Stack (most recent call first):
+[0.525s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[0.525s]   CMakeLists.txt:26 (rosidl_generate_interfaces)
+[0.525s] 
+[0.525s] [0m
+[0.525s] -- Configuring incomplete, errors occurred!
+[0.525s] See also "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/CMakeFiles/CMakeOutput.log".
+[0.529s] gmake: *** [Makefile:1827: cmake_check_build_system] Error 1
+[0.532s] Invoked command in '/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uas/Documents/blue/git_repos/xplane_ros2/install/xplaneros2_main:/opt/ros/humble /usr/bin/cmake --build /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces -- -j24 -l24

@@ -15,4 +15,8 @@ def generate_launch_description():
             package='xplaneros2_main',
             executable='data_collection',
             output='screen'),
+        Node(
+            package='xplaneros2_main',
+            executable='additional_controls',
+            output='screen'),
     ])

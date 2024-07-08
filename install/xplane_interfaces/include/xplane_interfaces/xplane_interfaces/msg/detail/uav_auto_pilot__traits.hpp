@@ -29,6 +29,27 @@ inline void to_flow_style_yaml(
   {
     out << "heading: ";
     rosidl_generator_traits::value_to_yaml(msg.heading, out);
+    out << ", ";
+  }
+
+  // member: altitude
+  {
+    out << "altitude: ";
+    rosidl_generator_traits::value_to_yaml(msg.altitude, out);
+    out << ", ";
+  }
+
+  // member: airspeed
+  {
+    out << "airspeed: ";
+    rosidl_generator_traits::value_to_yaml(msg.airspeed, out);
+    out << ", ";
+  }
+
+  // member: vertical_velocity
+  {
+    out << "vertical_velocity: ";
+    rosidl_generator_traits::value_to_yaml(msg.vertical_velocity, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -44,6 +65,36 @@ inline void to_block_style_yaml(
     }
     out << "heading: ";
     rosidl_generator_traits::value_to_yaml(msg.heading, out);
+    out << "\n";
+  }
+
+  // member: altitude
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "altitude: ";
+    rosidl_generator_traits::value_to_yaml(msg.altitude, out);
+    out << "\n";
+  }
+
+  // member: airspeed
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "airspeed: ";
+    rosidl_generator_traits::value_to_yaml(msg.airspeed, out);
+    out << "\n";
+  }
+
+  // member: vertical_velocity
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "vertical_velocity: ";
+    rosidl_generator_traits::value_to_yaml(msg.vertical_velocity, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

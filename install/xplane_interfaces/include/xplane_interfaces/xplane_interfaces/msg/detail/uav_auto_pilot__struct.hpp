@@ -39,6 +39,9 @@ struct UAVAutoPilot_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->heading = 0.0f;
+      this->altitude = 0.0f;
+      this->airspeed = 0.0f;
+      this->vertical_velocity = 0.0f;
     }
   }
 
@@ -49,6 +52,9 @@ struct UAVAutoPilot_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->heading = 0.0f;
+      this->altitude = 0.0f;
+      this->airspeed = 0.0f;
+      this->vertical_velocity = 0.0f;
     }
   }
 
@@ -56,12 +62,39 @@ struct UAVAutoPilot_
   using _heading_type =
     float;
   _heading_type heading;
+  using _altitude_type =
+    float;
+  _altitude_type altitude;
+  using _airspeed_type =
+    float;
+  _airspeed_type airspeed;
+  using _vertical_velocity_type =
+    float;
+  _vertical_velocity_type vertical_velocity;
 
   // setters for named parameter idiom
   Type & set__heading(
     const float & _arg)
   {
     this->heading = _arg;
+    return *this;
+  }
+  Type & set__altitude(
+    const float & _arg)
+  {
+    this->altitude = _arg;
+    return *this;
+  }
+  Type & set__airspeed(
+    const float & _arg)
+  {
+    this->airspeed = _arg;
+    return *this;
+  }
+  Type & set__vertical_velocity(
+    const float & _arg)
+  {
+    this->vertical_velocity = _arg;
     return *this;
   }
 
@@ -108,6 +141,15 @@ struct UAVAutoPilot_
   bool operator==(const UAVAutoPilot_ & other) const
   {
     if (this->heading != other.heading) {
+      return false;
+    }
+    if (this->altitude != other.altitude) {
+      return false;
+    }
+    if (this->airspeed != other.airspeed) {
+      return false;
+    }
+    if (this->vertical_velocity != other.vertical_velocity) {
       return false;
     }
     return true;

@@ -263,4 +263,13 @@ CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosi
  /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__type_support.h
  /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__struct.h
  /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.h
+ /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__type_support.h
+ /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__struct.h
+ /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.h
+ /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__type_support.h
+ /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__struct.h
+ /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.h
+ /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__type_support.h
+ /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__struct.h
+ /home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.h
 

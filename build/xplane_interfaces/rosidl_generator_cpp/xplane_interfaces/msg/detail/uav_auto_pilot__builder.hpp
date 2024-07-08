@@ -21,16 +21,64 @@ namespace msg
 namespace builder
 {
 
+class Init_UAVAutoPilot_vertical_velocity
+{
+public:
+  explicit Init_UAVAutoPilot_vertical_velocity(::xplane_interfaces::msg::UAVAutoPilot & msg)
+  : msg_(msg)
+  {}
+  ::xplane_interfaces::msg::UAVAutoPilot vertical_velocity(::xplane_interfaces::msg::UAVAutoPilot::_vertical_velocity_type arg)
+  {
+    msg_.vertical_velocity = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::xplane_interfaces::msg::UAVAutoPilot msg_;
+};
+
+class Init_UAVAutoPilot_airspeed
+{
+public:
+  explicit Init_UAVAutoPilot_airspeed(::xplane_interfaces::msg::UAVAutoPilot & msg)
+  : msg_(msg)
+  {}
+  Init_UAVAutoPilot_vertical_velocity airspeed(::xplane_interfaces::msg::UAVAutoPilot::_airspeed_type arg)
+  {
+    msg_.airspeed = std::move(arg);
+    return Init_UAVAutoPilot_vertical_velocity(msg_);
+  }
+
+private:
+  ::xplane_interfaces::msg::UAVAutoPilot msg_;
+};
+
+class Init_UAVAutoPilot_altitude
+{
+public:
+  explicit Init_UAVAutoPilot_altitude(::xplane_interfaces::msg::UAVAutoPilot & msg)
+  : msg_(msg)
+  {}
+  Init_UAVAutoPilot_airspeed altitude(::xplane_interfaces::msg::UAVAutoPilot::_altitude_type arg)
+  {
+    msg_.altitude = std::move(arg);
+    return Init_UAVAutoPilot_airspeed(msg_);
+  }
+
+private:
+  ::xplane_interfaces::msg::UAVAutoPilot msg_;
+};
+
 class Init_UAVAutoPilot_heading
 {
 public:
   Init_UAVAutoPilot_heading()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::xplane_interfaces::msg::UAVAutoPilot heading(::xplane_interfaces::msg::UAVAutoPilot::_heading_type arg)
+  Init_UAVAutoPilot_altitude heading(::xplane_interfaces::msg::UAVAutoPilot::_heading_type arg)
   {
     msg_.heading = std::move(arg);
-    return std::move(msg_);
+    return Init_UAVAutoPilot_altitude(msg_);
   }
 
 private:

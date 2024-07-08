@@ -8,7 +8,9 @@ import xpc
 import rclpy
 from rclpy.node import Node
 
-from xplane_interfaces.msg import UAVState, UAVControl
+from xplane_interfaces.msg import UAVLocalState, UAVControl, UAVAutoPilot
+
+from xplane_interfaces.srv import ParkingBrake
 
 class Test(Node):
 
@@ -18,13 +20,36 @@ class Test(Node):
 
 		self.uas = xpc.XPlaneConnect()
 
-		self.uav_state = UAVState()
+		self.uav_state = UAVLocalState()
 
-		self.state_subscriber = self.create_subscription(UAVState, '/xplane/uav/state', self.state_cb, 1)
+		self.uav_autopilot = UAVAutoPilot()
 
-		self.timer_period = 0.01
+		self.state_subscriber = self.create_subscription(UAVLocalState, '/xplane/uav/local_state', self.state_cb, 1)
 
-		self.timer = self.create_timer(self.timer_period, self.main)
+		self.autopilot_publisher = self.create_publisher(UAVAutoPilot, '/xplane/uav/autopilot_pub', 1)
+
+		self.client = self.create_client(ParkingBrake, 'control_srv/parking_brake')
+
+		self.datarefs = ['sim/flightmodel/controls/parkbrake']
+
+		self.uas.sendDREF("sim/flightmodel/controls/parkbrake", 0)
+
+		self.uas.sendDREF("sim/cockpit/autopilot/autopilot_mode", 2)
+
+		print("AUTOPILOT MODE ", self.uas.getDREF("sim/cockpit/autopilot/autopilot_mode")[0])
+
+		# while not self.client.wait_for_service(timeout_sec = 1.0):
+		# 	print("Waiting for the service")
+
+		# self.req = ParkingBrake.Request()
+
+		# self.req.parking_brake = True
+
+		# self.future = self.client.call_async(self.req)
+
+		# self.timer_period = 0.1
+
+		# self.timer = self.create_timer(self.timer_period, self.main)
 
 	
 	def state_cb(self, state):
@@ -33,8 +58,15 @@ class Test(Node):
 
 	def main(self):
 
+		data = self.uas.getDREFs(self.datarefs)
 
-			print(self.uav_state.airspeed)
+		self.uav_autopilot.heading, self.uav_autopilot.altitude, self.uav_autopilot.airspeed, self.uav_autopilot.vertical_velocity = 270.0, 25000.0, 230.0, 700.0
+
+		self.autopilot_publisher.publish(self.uav_autopilot)
+
+		#print(data[0][0], self.req.parking_brake)
+
+		print(self.uav_autopilot.heading)
 
 
 def main(args = None):

@@ -58,13 +58,22 @@ class UAVAutoPilot(metaclass=Metaclass_UAVAutoPilot):
 
     __slots__ = [
         '_heading',
+        '_altitude',
+        '_airspeed',
+        '_vertical_velocity',
     ]
 
     _fields_and_field_types = {
         'heading': 'float',
+        'altitude': 'float',
+        'airspeed': 'float',
+        'vertical_velocity': 'float',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
     )
 
@@ -73,6 +82,9 @@ class UAVAutoPilot(metaclass=Metaclass_UAVAutoPilot):
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.heading = kwargs.get('heading', float())
+        self.altitude = kwargs.get('altitude', float())
+        self.airspeed = kwargs.get('airspeed', float())
+        self.vertical_velocity = kwargs.get('vertical_velocity', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -105,6 +117,12 @@ class UAVAutoPilot(metaclass=Metaclass_UAVAutoPilot):
             return False
         if self.heading != other.heading:
             return False
+        if self.altitude != other.altitude:
+            return False
+        if self.airspeed != other.airspeed:
+            return False
+        if self.vertical_velocity != other.vertical_velocity:
+            return False
         return True
 
     @classmethod
@@ -126,3 +144,48 @@ class UAVAutoPilot(metaclass=Metaclass_UAVAutoPilot):
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
                 "The 'heading' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._heading = value
+
+    @builtins.property
+    def altitude(self):
+        """Message field 'altitude'."""
+        return self._altitude
+
+    @altitude.setter
+    def altitude(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'altitude' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'altitude' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._altitude = value
+
+    @builtins.property
+    def airspeed(self):
+        """Message field 'airspeed'."""
+        return self._airspeed
+
+    @airspeed.setter
+    def airspeed(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'airspeed' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'airspeed' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._airspeed = value
+
+    @builtins.property
+    def vertical_velocity(self):
+        """Message field 'vertical_velocity'."""
+        return self._vertical_velocity
+
+    @vertical_velocity.setter
+    def vertical_velocity(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'vertical_velocity' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'vertical_velocity' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._vertical_velocity = value

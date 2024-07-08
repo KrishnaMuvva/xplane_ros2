@@ -59,6 +59,33 @@ bool xplane_interfaces__msg__uav_auto_pilot__convert_from_py(PyObject * _pymsg, 
     ros_message->heading = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
+  {  // altitude
+    PyObject * field = PyObject_GetAttrString(_pymsg, "altitude");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->altitude = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // airspeed
+    PyObject * field = PyObject_GetAttrString(_pymsg, "airspeed");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->airspeed = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // vertical_velocity
+    PyObject * field = PyObject_GetAttrString(_pymsg, "vertical_velocity");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->vertical_velocity = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -86,6 +113,39 @@ PyObject * xplane_interfaces__msg__uav_auto_pilot__convert_to_py(void * raw_ros_
     field = PyFloat_FromDouble(ros_message->heading);
     {
       int rc = PyObject_SetAttrString(_pymessage, "heading", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // altitude
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->altitude);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "altitude", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // airspeed
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->airspeed);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "airspeed", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // vertical_velocity
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->vertical_velocity);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "vertical_velocity", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

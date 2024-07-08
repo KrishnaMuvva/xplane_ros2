@@ -21,6 +21,9 @@ extern "C"
 typedef struct xplane_interfaces__msg__UAVAutoPilot
 {
   float heading;
+  float altitude;
+  float airspeed;
+  float vertical_velocity;
 } xplane_interfaces__msg__UAVAutoPilot;
 
 // Struct for a sequence of xplane_interfaces__msg__UAVAutoPilot.

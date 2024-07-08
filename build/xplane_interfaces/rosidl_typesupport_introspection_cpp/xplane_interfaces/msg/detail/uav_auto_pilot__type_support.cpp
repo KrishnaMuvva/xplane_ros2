@@ -37,7 +37,7 @@ void UAVAutoPilot_fini_function(void * message_memory)
   typed_message->~UAVAutoPilot();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember UAVAutoPilot_message_member_array[1] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember UAVAutoPilot_message_member_array[4] = {
   {
     "heading",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
@@ -54,13 +54,64 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember UAVAutoPilot_
     nullptr,  // fetch(index, &value) function pointer
     nullptr,  // assign(index, value) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "altitude",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(xplane_interfaces::msg::UAVAutoPilot, altitude),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "airspeed",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(xplane_interfaces::msg::UAVAutoPilot, airspeed),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "vertical_velocity",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(xplane_interfaces::msg::UAVAutoPilot, vertical_velocity),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers UAVAutoPilot_message_members = {
   "xplane_interfaces::msg",  // message namespace
   "UAVAutoPilot",  // message name
-  1,  // number of fields
+  4,  // number of fields
   sizeof(xplane_interfaces::msg::UAVAutoPilot),
   UAVAutoPilot_message_member_array,  // message members
   UAVAutoPilot_init_function,  // function to initialize message memory (memory has to be allocated)

@@ -30,6 +30,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/UAVType.msg"
   "msg/UAVControl.msg"
   "msg/UAVAutoPilot.msg"
+  "srv/ParkingBrake.srv"
+  "srv/LandingGear.srv"
   DEPENDENCIES builtin_interfaces std_msgs
 )
 

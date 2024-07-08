@@ -380,6 +380,14 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xplane_interfaces/srv" TYPE FILE FILES "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces/srv/ParkingBrake.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xplane_interfaces/srv" TYPE FILE FILES "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_adapter/xplane_interfaces/srv/LandingGear.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xplane_interfaces/msg" TYPE FILE FILES "/home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces/msg/UAVState.msg")
 endif()
 
@@ -401,6 +409,30 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xplane_interfaces/msg" TYPE FILE FILES "/home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces/msg/UAVAutoPilot.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xplane_interfaces/srv" TYPE FILE FILES "/home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces/srv/ParkingBrake.srv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xplane_interfaces/srv" TYPE FILE FILES "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_cmake/srv/ParkingBrake_Request.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xplane_interfaces/srv" TYPE FILE FILES "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_cmake/srv/ParkingBrake_Response.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xplane_interfaces/srv" TYPE FILE FILES "/home/uas/Documents/blue/git_repos/xplane_ros2/src/xplane_interfaces/srv/LandingGear.srv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xplane_interfaces/srv" TYPE FILE FILES "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_cmake/srv/LandingGear_Request.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xplane_interfaces/srv" TYPE FILE FILES "/home/uas/Documents/blue/git_repos/xplane_ros2/build/xplane_interfaces/rosidl_cmake/srv/LandingGear_Response.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

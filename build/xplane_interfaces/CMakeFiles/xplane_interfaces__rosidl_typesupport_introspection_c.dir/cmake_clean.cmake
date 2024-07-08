@@ -11,6 +11,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_state__type_support.c.o.d"
   "CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__type_support.c.o"
   "CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__type_support.c.o.d"
+  "CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/srv/detail/landing_gear__type_support.c.o"
+  "CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/srv/detail/landing_gear__type_support.c.o.d"
+  "CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/srv/detail/parking_brake__type_support.c.o"
+  "CMakeFiles/xplane_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xplane_interfaces/srv/detail/parking_brake__type_support.c.o.d"
   "libxplane_interfaces__rosidl_typesupport_introspection_c.pdb"
   "libxplane_interfaces__rosidl_typesupport_introspection_c.so"
   "rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_auto_pilot__rosidl_typesupport_introspection_c.h"
@@ -25,6 +29,10 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_state__type_support.c"
   "rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/xplane_interfaces/msg/detail/uav_type__type_support.c"
+  "rosidl_typesupport_introspection_c/xplane_interfaces/srv/detail/landing_gear__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/xplane_interfaces/srv/detail/landing_gear__type_support.c"
+  "rosidl_typesupport_introspection_c/xplane_interfaces/srv/detail/parking_brake__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/xplane_interfaces/srv/detail/parking_brake__type_support.c"
 )
 
 # Per-language clean rules from dependency scanning.

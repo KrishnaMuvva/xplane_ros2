@@ -261,8 +261,33 @@ CMakeFiles/xplane_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_p
   rosidl_generator_c/xplane_interfaces/msg/detail/uav_type__functions.h \
   rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__type_support.h \
   rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__struct.h \
-  rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.h
+  rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.h \
+  rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__type_support.h \
+  rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__struct.h \
+  rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.h \
+  rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__type_support.h \
+  rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__struct.h \
+  rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.h \
+  rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__type_support.h \
+  rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__struct.h \
+  rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.h
 
+
+rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__functions.h:
+
+rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__struct.h:
+
+rosidl_generator_c/xplane_interfaces/srv/detail/landing_gear__type_support.h:
+
+rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__functions.h:
+
+rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__struct.h:
+
+rosidl_generator_c/xplane_interfaces/srv/detail/parking_brake__type_support.h:
+
+rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__functions.h:
+
+rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__struct.h:
 
 rosidl_generator_c/xplane_interfaces/msg/detail/uav_control__functions.h:
 
@@ -395,6 +420,8 @@ rosidl_generator_c/xplane_interfaces/msg/detail/uav_local_state__struct.h:
 /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+rosidl_generator_c/xplane_interfaces/msg/detail/uav_auto_pilot__type_support.h:
 
 /usr/include/limits.h:
 
