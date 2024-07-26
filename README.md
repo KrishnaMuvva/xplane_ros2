@@ -110,3 +110,7 @@ python3 traffic_pattern.py
 ```
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/6SplI0cyI7c/0.jpg)](https://www.youtube.com/watch?v=6SplI0cyI7c)
+
+
+> [!NOTE]
+> This work has been accepted for presentation to the [Digital Avionics Systems Conference](https://2024.dasconline.org/). The link to the paper will be added upon publication.
